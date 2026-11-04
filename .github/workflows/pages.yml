@@ -38,7 +38,7 @@ jobs:
       - name: Assemble site
         run: |
           mkdir -p _site
-          cp -r index.html manifest.webmanifest icon.svg data audio _site/
+          cp -r index.html style.css manifest.webmanifest icon-180.png icon-512.png js data audio _site/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

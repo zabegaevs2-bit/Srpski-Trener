@@ -1,17 +1,2096 @@
-{"lessons":[
-{"id":"a1-01","lvl":"A1","n":1,"title":"Алфавит и приветствия",
-"g":[
-{"h":"Один звук — одна буква","t":"Сербский читается так, как пишется. У каждой буквы один звук, гласные не редуцируются: <b>a</b> всегда [а], <b>o</b> всегда [о]. Никакого «аканья»."},
-{"h":"Латиница и кириллица","t":"В Сербии равноправны оба письма. Латиница: <b>A B C Č Ć D Dž Đ E F G H I J K L Lj M N Nj O P R S Š T U V Z Ž</b>. Кириллица: <b>А Б Ц Ч Ћ Д Џ Ђ Е Ф Г Х И Ј К Л Љ М Н Њ О П Р С Ш Т У В З Ж</b>. Соответствуют друг другу по порядку в паре, например: c = ц, č = ч, ć = ћ, dž = џ, đ = ђ, lj = љ, nj = њ, j = ј, h = х."},
-{"h":"Звуки, которых нет в русском","t":"<b>č</b> — твёрдое «ч», <b>ć</b> — мягкое «чь», <b>dž</b> — твёрдое «дж», <b>đ</b> — мягкое «дь». <b>lj</b> и <b>nj</b> — мягкие «ль», «нь». <b>j</b> — «й». <b>h</b> — всегда «х». <b>r</b> может быть гласным: <b>Srbija, prst</b>."}
+{
+"lessons": [
+{
+"id": "a1-01",
+"lvl": "A1",
+"n": 1,
+"title": "Алфавит и приветствия",
+"g": [
+{
+"h": "Один звук — одна буква",
+"t": "Сербский читается так, как пишется. У каждой буквы один звук, гласные не редуцируются: <b>a</b> всегда [а], <b>o</b> всегда [о]. Никакого «аканья»."
+},
+{
+"h": "Латиница и кириллица",
+"t": "В Сербии равноправны оба письма. Латиница: <b>A B C Č Ć D Dž Đ E F G H I J K L Lj M N Nj O P R S Š T U V Z Ž</b>. Кириллица: <b>А Б Ц Ч Ћ Д Џ Ђ Е Ф Г Х И Ј К Л Љ М Н Њ О П Р С Ш Т У В З Ж</b>. Соответствуют друг другу по порядку в паре, например: c = ц, č = ч, ć = ћ, dž = џ, đ = ђ, lj = љ, nj = њ, j = ј, h = х."
+},
+{
+"h": "Звуки, которых нет в русском",
+"t": "<b>č</b> — твёрдое «ч», <b>ć</b> — мягкое «чь», <b>dž</b> — твёрдое «дж», <b>đ</b> — мягкое «дь». <b>lj</b> и <b>nj</b> — мягкие «ль», «нь». <b>j</b> — «й». <b>h</b> — всегда «х». <b>r</b> может быть гласным: <b>Srbija, prst</b>."
+}
 ],
-"w":[["Zdravo","Привет"],["Dobro jutro","Доброе утро"],["Dobar dan","Добрый день"],["Dobro veče","Добрый вечер"],["Laku noć","Спокойной ночи"],["Doviđenja","До свидания"],["Hvala","Спасибо"],["Molim","Пожалуйста"],["Izvinite","Извините"],["Da","Да"],["Ne","Нет"],["Ćao","Пока"]],
-"d":[["Dobar dan!","Добрый день!"],["Dobar dan! Kako ste?","Добрый день! Как вы?"],["Dobro sam, hvala. A vi?","Хорошо, спасибо. А вы?"],["Dobro, hvala. Doviđenja!","Хорошо, спасибо. До свидания!"],["Doviđenja!","До свидания!"]],
-"x":[
-["Как сказать «Спасибо»?",["Molim","Hvala","Izvinite","Ne"],1,"Hvala — спасибо. Molim — пожалуйста."],
-["Утром вы говорите: ___!",["Dobro veče","Laku noć","Dobro jutro","Doviđenja"],2,"Dobro jutro — доброе утро. Jutro — это утро, а не завтра."],
-["Вы уходите и говорите: ___!",["Zdravo","Doviđenja","Dobar dan","Hvala"],1,"Doviđenja — до свидания."],
-["Буква «č» читается как…",["твёрдое «ч»","мягкое «чь»","«ц»","«ш»"],0,"č твёрдое, ć мягкое. Оба пишутся по-разному, и слова различаются."],
-["«Ne» означает…",["да","нет","пожалуйста","привет"],1,"Ne — нет. Не путайте с русским «не»."]
-]}
-]}
+"w": [
+[
+"Zdravo",
+"Привет"
+],
+[
+"Dobro jutro",
+"Доброе утро"
+],
+[
+"Dobar dan",
+"Добрый день"
+],
+[
+"Dobro veče",
+"Добрый вечер"
+],
+[
+"Laku noć",
+"Спокойной ночи"
+],
+[
+"Doviđenja",
+"До свидания"
+],
+[
+"Hvala",
+"Спасибо"
+],
+[
+"Molim",
+"Пожалуйста"
+],
+[
+"Izvinite",
+"Извините"
+],
+[
+"Da",
+"Да"
+],
+[
+"Ne",
+"Нет"
+],
+[
+"Ćao",
+"Пока"
+]
+],
+"d": [
+[
+"Dobar dan!",
+"Добрый день!"
+],
+[
+"Dobar dan! Kako ste?",
+"Добрый день! Как вы?"
+],
+[
+"Dobro sam, hvala. A vi?",
+"Хорошо, спасибо. А вы?"
+],
+[
+"Dobro, hvala. Doviđenja!",
+"Хорошо, спасибо. До свидания!"
+],
+[
+"Doviđenja!",
+"До свидания!"
+]
+],
+"x": [
+[
+"Как сказать «Спасибо»?",
+[
+"Molim",
+"Hvala",
+"Izvinite",
+"Ne"
+],
+1,
+"Hvala — спасибо. Molim — пожалуйста."
+],
+[
+"Утром вы говорите: ___!",
+[
+"Dobro veče",
+"Laku noć",
+"Dobro jutro",
+"Doviđenja"
+],
+2,
+"Dobro jutro — доброе утро. Jutro — это утро, а не завтра."
+],
+[
+"Вы уходите и говорите: ___!",
+[
+"Zdravo",
+"Doviđenja",
+"Dobar dan",
+"Hvala"
+],
+1,
+"Doviđenja — до свидания."
+],
+[
+"Буква «č» читается как…",
+[
+"твёрдое «ч»",
+"мягкое «чь»",
+"«ц»",
+"«ш»"
+],
+0,
+"č твёрдое, ć мягкое. Оба пишутся по-разному, и слова различаются."
+],
+[
+"«Ne» означает…",
+[
+"да",
+"нет",
+"пожалуйста",
+"привет"
+],
+1,
+"Ne — нет. Не путайте с русским «не»."
+]
+]
+},
+{
+"id": "a1-02",
+"lvl": "A1",
+"n": 2,
+"title": "Кто ты? Местоимения и глагол «быть»",
+"g": [
+{
+"h": "Личные местоимения",
+"t": "<b>ja</b> я, <b>ti</b> ты, <b>on</b> он, <b>ona</b> она, <b>ono</b> оно, <b>mi</b> мы, <b>vi</b> вы, <b>oni</b> они (м.р.), <b>one</b> они (ж.р.), <b>ona</b> они (ср.р.). Вежливое «Вы» — тоже <b>vi</b>: Vi ste profesor."
+},
+{
+"h": "Глагол biti (быть) — обязателен",
+"t": "В русском «Я студент» без глагола. В сербском глагол нужен: <b>Ja sam student</b>. Формы: <b>ja sam, ti si, on/ona/ono je, mi smo, vi ste, oni su</b>. Короткие формы безударные и стоят после первого слова: Ja sam Ana."
+},
+{
+"h": "Отрицание",
+"t": "К форме добавляется <b>ni-</b>: <b>nisam, nisi, nije, nismo, niste, nisu</b>. Ja nisam student."
+},
+{
+"h": "Спросить имя",
+"t": "<b>Kako se zoveš?</b> — Как тебя зовут? <b>Zovem se Marko.</b> — Меня зовут Марко. Вежливо: Kako se zovete?"
+}
+],
+"pr": "В <b>sam, si, je, smo, ste, su</b> гласные не редуцируются: <b>sam</b> — [сам], а не [сэм]. Фраза <b>Ja sam</b> произносится слитно.",
+"w": [
+[
+"ja",
+"я"
+],
+[
+"ti",
+"ты"
+],
+[
+"on",
+"он"
+],
+[
+"ona",
+"она"
+],
+[
+"mi",
+"мы"
+],
+[
+"vi",
+"вы"
+],
+[
+"oni",
+"они"
+],
+[
+"ko",
+"кто"
+],
+[
+"šta",
+"что"
+],
+[
+"odakle",
+"откуда"
+],
+[
+"iz",
+"из"
+],
+[
+"Drago mi je",
+"Приятно познакомиться"
+]
+],
+"d": [
+[
+"Zdravo! Kako se zoveš?",
+"Привет! Как тебя зовут?"
+],
+[
+"Zovem se Marko. A ti?",
+"Меня зовут Марко. А тебя?"
+],
+[
+"Ja sam Ana. Drago mi je.",
+"Я Ана. Приятно познакомиться."
+],
+[
+"Odakle si ti?",
+"Откуда ты?"
+],
+[
+"Ja sam iz Rusije. A ti?",
+"Я из России. А ты?"
+],
+[
+"Ja sam iz Beograda.",
+"Я из Белграда."
+]
+],
+"x": [
+[
+"Ja ___ student.",
+[
+"sam",
+"si",
+"je",
+"smo"
+],
+0,
+"С ja — sam: ja sam."
+],
+[
+"Ti ___ iz Srbije.",
+[
+"sam",
+"si",
+"je",
+"ste"
+],
+1,
+"С ti — si: ti si."
+],
+[
+"Mi ___ iz Rusije.",
+[
+"smo",
+"su",
+"ste",
+"je"
+],
+0,
+"С mi — smo: mi smo."
+],
+[
+"Vi ___ profesor.",
+[
+"su",
+"ste",
+"si",
+"smo"
+],
+1,
+"С vi — ste: vi ste."
+],
+[
+"Oni ___ studenti.",
+[
+"je",
+"smo",
+"su",
+"ste"
+],
+2,
+"С oni — su: oni su."
+],
+[
+"Я не студент: Ja ___ student.",
+[
+"nisam",
+"nije",
+"nisi",
+"nismo"
+],
+0,
+"Ja nisam — я не."
+],
+[
+"Как спросить «Откуда ты?»",
+[
+"Odakle si?",
+"Gde si?",
+"Ko si?",
+"Šta si?"
+],
+0,
+"Odakle — откуда; gde — где."
+]
+]
+},
+{
+"id": "a1-03",
+"lvl": "A1",
+"n": 3,
+"title": "Род существительных",
+"g": [
+{
+"h": "Три рода, как в русском",
+"t": "<b>Мужской</b>: оканчивается на согласную: <b>grad, brat, hleb</b>. <b>Женский</b>: на -a: <b>kuća, kafa, žena</b>. <b>Средний</b>: на -o, -e: <b>more, mleko, pivo</b>. Артиклей нет: Ovo je kuća (Это дом)."
+},
+{
+"h": "Рода, которые отличаются от русского",
+"t": "<b>kafa</b> (кофе) — женский, а в русском мужской. <b>auto</b> (машина) — средний. <b>mleko</b> (молоко) — средний. Слово <b>noć</b> (ночь) женское, хотя оканчивается на согласную. Род учите вместе со словом."
+},
+{
+"h": "Ovo je… и ovaj / ova / ovo",
+"t": "<b>Ovo je</b> — это (для любого рода). Указательное слово согласуется с родом: <b>ovaj grad</b>, <b>ova kuća</b>, <b>ovo more</b>. Так же: <b>taj / ta / to</b> (этот, у собеседника), <b>onaj / ona / ono</b> (тот вдали)."
+},
+{
+"h": "Мой / моя / моё",
+"t": "<b>moj brat</b>, <b>moja kuća</b>, <b>moje auto</b>. Подробнее в уроке 8."
+}
+],
+"w": [
+[
+"brat",
+"брат"
+],
+[
+"sestra",
+"сестра"
+],
+[
+"kuća",
+"дом"
+],
+[
+"grad",
+"город"
+],
+[
+"hleb",
+"хлеб"
+],
+[
+"kafa",
+"кофе"
+],
+[
+"mleko",
+"молоко"
+],
+[
+"voda",
+"вода"
+],
+[
+"auto",
+"машина"
+],
+[
+"knjiga",
+"книга"
+],
+[
+"škola",
+"школа"
+],
+[
+"more",
+"море"
+]
+],
+"d": [
+[
+"Šta je ovo? Ovo je kuća.",
+"Что это? Это дом."
+],
+[
+"A šta je ono? Ono je škola.",
+"А что то? То школа."
+],
+[
+"Ovo je moj brat Marko.",
+"Это мой брат Марко."
+],
+[
+"Ovaj grad je Beograd.",
+"Этот город — Белград."
+],
+[
+"Ovo je voda, a ovo je mleko.",
+"Это вода, а это молоко."
+],
+[
+"Ono je moje auto.",
+"То моя машина."
+]
+],
+"x": [
+[
+"___ kuća",
+[
+"ovaj",
+"ova",
+"ovo",
+"ove"
+],
+1,
+"Kuća — женский: ova kuća."
+],
+[
+"___ grad",
+[
+"ovaj",
+"ova",
+"ovo",
+"ove"
+],
+0,
+"Grad — мужской: ovaj grad."
+],
+[
+"___ more",
+[
+"ovaj",
+"ova",
+"ovo",
+"ove"
+],
+2,
+"More — средний: ovo more."
+],
+[
+"Какого рода слово kafa?",
+[
+"мужского",
+"женского",
+"среднего",
+"нет рода"
+],
+1,
+"Kafa на -a — женский."
+],
+[
+"Какого рода слово mleko?",
+[
+"мужского",
+"женского",
+"среднего",
+"нет рода"
+],
+2,
+"Mleko на -o — средний."
+],
+[
+"Какого рода слово brat?",
+[
+"мужского",
+"женского",
+"среднего",
+"нет рода"
+],
+0,
+"Brat оканчивается на согласную — мужской."
+],
+[
+"Как сказать «Что это?»",
+[
+"Šta je ovo?",
+"Ko je ovo?",
+"Gde je ovo?",
+"Odakle je ovo?"
+],
+0,
+"Šta — что."
+]
+]
+},
+{
+"id": "a1-04",
+"lvl": "A1",
+"n": 4,
+"title": "Иметь и не иметь, числа",
+"g": [
+{
+"h": "Глагол imati (иметь)",
+"t": "<b>imam, imaš, ima, imamo, imate, imaju</b>. «У меня есть брат» — <b>Imam brata</b>. Не «kod mene je». Вопрос: <b>Imaš li brata?</b> — у тебя есть брат?"
+},
+{
+"h": "Нет — nemam",
+"t": "<b>nemam, nemaš, nema, nemamo, nemate, nemaju</b>. Слитно, без пробела. Безличное <b>nema</b> — нет: Nema kafe (Кофе нет). После nemam слово ставится в родительный падеж: <b>nemam vremena, nema kafe</b>. Подробно в уроке 9."
+},
+{
+"h": "Числа 1–10",
+"t": "<b>jedan, dva, tri, četiri, pet, šest, sedam, osam, devet, deset</b>. Для женского рода: <b>jedna, dve</b>; для среднего <b>jedno, dva</b>. После 2, 3, 4 слово в особой форме: <b>dva brata, tri knjige</b>; после 5 и далее: <b>pet knjiga</b>."
+}
+],
+"w": [
+[
+"imati",
+"иметь"
+],
+[
+"nemam",
+"у меня нет"
+],
+[
+"jedan",
+"один"
+],
+[
+"dva",
+"два"
+],
+[
+"tri",
+"три"
+],
+[
+"četiri",
+"четыре"
+],
+[
+"pet",
+"пять"
+],
+[
+"šest",
+"шесть"
+],
+[
+"sedam",
+"семь"
+],
+[
+"osam",
+"восемь"
+],
+[
+"devet",
+"девять"
+],
+[
+"deset",
+"десять"
+]
+],
+"d": [
+[
+"Imaš li brata ili sestru?",
+"У тебя есть брат или сестра?"
+],
+[
+"Imam brata. Nemam sestre.",
+"У меня есть брат. Сестры нет."
+],
+[
+"Imaš li vremena danas?",
+"У тебя сегодня есть время?"
+],
+[
+"Nemam vremena, ali sutra imam.",
+"Времени нет, но завтра есть."
+],
+[
+"Imam dva brata i dve sestre.",
+"У меня два брата и две сестры."
+],
+[
+"Imamo pet knjiga.",
+"У нас пять книг."
+]
+],
+"x": [
+[
+"Ja ___ brata.",
+[
+"imam",
+"imaš",
+"ima",
+"imamo"
+],
+0,
+"Ja imam."
+],
+[
+"Ti ___ sestru.",
+[
+"imam",
+"imaš",
+"ima",
+"imaju"
+],
+1,
+"Ti imaš."
+],
+[
+"Mi ___ auto.",
+[
+"imamo",
+"imate",
+"imaju",
+"ima"
+],
+0,
+"Mi imamo."
+],
+[
+"Ona ___ vremena.",
+[
+"nema",
+"nemam",
+"nemaš",
+"nemaju"
+],
+0,
+"Ona nema vremena. Nema — безличное и 3-е лицо."
+],
+[
+"Как будет «пять»?",
+[
+"pet",
+"šest",
+"devet",
+"deset"
+],
+0,
+"Pet — пять."
+],
+[
+"Imam ___ sestre.",
+[
+"dva",
+"dve",
+"jedan",
+"pet"
+],
+1,
+"Ж.р.: dve sestre."
+],
+[
+"Imam ___ brata.",
+[
+"dva",
+"dve",
+"jedna",
+"pet"
+],
+0,
+"М.р.: dva brata."
+]
+]
+},
+{
+"id": "a1-05",
+"lvl": "A1",
+"n": 5,
+"title": "Настоящее время",
+"g": [
+{
+"h": "Три типа глаголов",
+"t": "<b>-am</b>: čitam, čitaš, čita, čitamo, čitate, čitaju. <b>-im</b>: govorim, govoriš, govori, govorimo, govorite, govore. <b>-em</b>: pišem, pišeš, piše, pišemo, pišete, pišu. Окончание у ja всегда -m (или -u), у oni — особое."
+},
+{
+"h": "Инфинитив и «da» + настоящее",
+"t": "В словаре: <b>čitati, govoriti, pisati</b>. Но после «хочу, могу, должен» вместо инфинитива пользуются <b>da + настоящее</b>: <b>Hoću da pišem</b>. <b>Mogu da dođem</b>. <b>Moram da radim</b>. Не «hoću pisati»."
+},
+{
+"h": "Вопрос «li»",
+"t": "<b>Govoriš li srpski?</b> — глагол идёт первым, потом li. Можно и <b>Da li govoriš srpski?</b>"
+}
+],
+"pr": "Слово <b>srpski</b> читайте как [српски]: r здесь слоговое, между s и p нет гласного.",
+"w": [
+[
+"čitati",
+"читать"
+],
+[
+"govoriti",
+"говорить"
+],
+[
+"pisati",
+"писать"
+],
+[
+"raditi",
+"работать"
+],
+[
+"živeti",
+"жить"
+],
+[
+"učiti",
+"учить"
+],
+[
+"razumeti",
+"понимать"
+],
+[
+"znati",
+"знать"
+],
+[
+"voleti",
+"любить"
+],
+[
+"hteti",
+"хотеть"
+],
+[
+"moći",
+"мочь"
+],
+[
+"morati",
+"быть должным"
+]
+],
+"d": [
+[
+"Govoriš li srpski?",
+"Ты говоришь по-сербски?"
+],
+[
+"Govorim malo i učim.",
+"Я говорю немного и учусь."
+],
+[
+"Šta radiš ovde?",
+"Что ты здесь делаешь?"
+],
+[
+"Radim i živim u Beogradu.",
+"Я работаю и живу в Белграде."
+],
+[
+"Moram da radim, ali hoću da učim.",
+"Мне надо работать, но я хочу учиться."
+],
+[
+"Ne razumem sve, ali razumem malo.",
+"Я понимаю не всё, но кое-что понимаю."
+]
+],
+"x": [
+[
+"Ja ___ srpski.",
+[
+"govorim",
+"govoriš",
+"govori",
+"govore"
+],
+0,
+"Ja govorim."
+],
+[
+"Ti ___ knjigu.",
+[
+"čitam",
+"čitaš",
+"čita",
+"čitamo"
+],
+1,
+"Ti čitaš."
+],
+[
+"Ona ___ pismo.",
+[
+"piše",
+"pišem",
+"pišeš",
+"pišu"
+],
+0,
+"Ona piše."
+],
+[
+"Oni ___ u Beogradu.",
+[
+"živi",
+"žive",
+"živim",
+"živimo"
+],
+1,
+"Oni žive."
+],
+[
+"Hoću ___ učim.",
+[
+"da",
+"ti",
+"u",
+"na"
+],
+0,
+"Hoću da učim: da + настоящее."
+],
+[
+"Mi ___ da radimo.",
+[
+"moramo",
+"moram",
+"morate",
+"moraju"
+],
+0,
+"Mi moramo."
+],
+[
+"Vi ___ srpski?",
+[
+"razumem",
+"razumeš",
+"razumemo",
+"razumete"
+],
+3,
+"Vi razumete."
+]
+]
+},
+{
+"id": "a1-06",
+"lvl": "A1",
+"n": 6,
+"title": "Винительный падеж",
+"g": [
+{
+"h": "Что это за падеж",
+"t": "Винительный (<b>akuzativ</b>) отвечает на вопросы <b>koga? šta?</b> Это прямое дополнение: <b>vidim brata</b>, <b>pijem kafu</b>, <b>jedem hleb</b>."
+},
+{
+"h": "Окончания",
+"t": "Женский на -a меняет -a на <b>-u</b>: <b>kafa → kafu, žena → ženu, knjiga → knjigu</b>. Мужской неодушевлённый не меняется: <b>hleb → hleb, grad → grad</b>. Мужской одушевлённый получает <b>-a</b>: <b>brat → brata</b>. Средний не меняется: <b>more → more, mleko → mleko</b>."
+},
+{
+"h": "Куда? u / na + винительный",
+"t": "<b>Idem u školu</b> (иду в школу), <b>idem na posao</b> (иду на работу), <b>idem u grad</b>. На вопрос «куда?» — винительный. На вопрос «где?» — другой падеж (урок 7)."
+}
+],
+"w": [
+[
+"piti",
+"пить"
+],
+[
+"jesti",
+"есть"
+],
+[
+"kupovati",
+"покупать"
+],
+[
+"čekati",
+"ждать"
+],
+[
+"videti",
+"видеть"
+],
+[
+"tražiti",
+"искать, просить"
+],
+[
+"čaj",
+"чай"
+],
+[
+"sok",
+"сок"
+],
+[
+"sir",
+"сыр"
+],
+[
+"meso",
+"мясо"
+],
+[
+"pivo",
+"пиво"
+],
+[
+"doručak",
+"завтрак"
+]
+],
+"d": [
+[
+"Šta piješ, kafu ili čaj?",
+"Что пьёшь, кофе или чай?"
+],
+[
+"Pijem kafu. A ti?",
+"Я пью кофе. А ты?"
+],
+[
+"Ja pijem čaj i jedem sir.",
+"Я пью чай и ем сыр."
+],
+[
+"Čekam brata ovde.",
+"Жду брата здесь."
+],
+[
+"Ne vidim moju sestru.",
+"Я не вижу мою сестру."
+],
+[
+"Danas idem u školu.",
+"Сегодня иду в школу."
+]
+],
+"x": [
+[
+"Pijem ___. (kafa)",
+[
+"kafa",
+"kafu",
+"kafe",
+"kafi"
+],
+1,
+"Ж.р. на -a: винительный -u: kafu."
+],
+[
+"Vidim ___. (žena)",
+[
+"ženu",
+"žena",
+"žene",
+"ženi"
+],
+0,
+"Žena → ženu."
+],
+[
+"Jedem ___. (hleb)",
+[
+"hleba",
+"hleb",
+"hlebu",
+"hlebom"
+],
+1,
+"Неодушевлённый м.р.: как в именительном: hleb."
+],
+[
+"Čekam ___. (brat)",
+[
+"brat",
+"brata",
+"bratu",
+"bratom"
+],
+1,
+"Одушевлённый м.р.: -a: brata."
+],
+[
+"Idem u ___. (škola)",
+[
+"školi",
+"školu",
+"škola",
+"škole"
+],
+1,
+"u + куда? → винительный: školu."
+],
+[
+"Volim ___. (more)",
+[
+"more",
+"mora",
+"moru",
+"morem"
+],
+0,
+"Средний род не меняется: more."
+],
+[
+"Kupujem ___. (knjiga)",
+[
+"knjiga",
+"knjigu",
+"knjige",
+"knjizi"
+],
+1,
+"Knjiga → knjigu."
+]
+]
+},
+{
+"id": "a1-07",
+"lvl": "A1",
+"n": 7,
+"title": "Предложный падеж: где?",
+"g": [
+{
+"h": "Локатив (lokativ)",
+"t": "Отвечает на вопрос <b>gde? o kome? o čemu?</b> Используется только с предлогами: <b>u</b> (в), <b>na</b> (на), <b>o</b> (о), <b>po</b>, <b>pri</b>. Окончания: мужской и средний <b>-u</b>, женский <b>-i</b>."
+},
+{
+"h": "Примеры",
+"t": "<b>grad → u gradu</b>, <b>Beograd → u Beogradu</b>, <b>selo → u selu</b>, <b>kuća → u kući</b>, <b>škola → u školi</b>, <b>posao → na poslu</b>."
+},
+{
+"h": "Чередования согласных",
+"t": "В женском роде перед -i: <b>k → c, g → z, h → s</b>: <b>majka → majci</b>, <b>knjiga → knjizi</b>, <b>banka → banci</b>."
+},
+{
+"h": "Где? или куда?",
+"t": "<b>Živim u Beogradu</b> (где — локатив). <b>Idem u Beograd</b> (куда — винительный). Мужской неодушевлённый в винительном не меняется."
+}
+],
+"w": [
+[
+"stan",
+"квартира"
+],
+[
+"selo",
+"деревня"
+],
+[
+"prodavnica",
+"магазин"
+],
+[
+"restoran",
+"ресторан"
+],
+[
+"centar",
+"центр"
+],
+[
+"park",
+"парк"
+],
+[
+"ovde",
+"здесь"
+],
+[
+"tamo",
+"там"
+],
+[
+"gde",
+"где"
+],
+[
+"kod kuće",
+"дома"
+],
+[
+"sada",
+"сейчас"
+],
+[
+"posao",
+"работа"
+]
+],
+"d": [
+[
+"Gde živiš?",
+"Где ты живёшь?"
+],
+[
+"Živim u Beogradu, u stanu.",
+"Я живу в Белграде, в квартире."
+],
+[
+"A gde radiš?",
+"А где ты работаешь?"
+],
+[
+"Radim u centru, a sada sam na poslu.",
+"Работаю в центре, а сейчас я на работе."
+],
+[
+"Danas sam kod kuće.",
+"Сегодня я дома."
+],
+[
+"Tamo je restoran.",
+"Там ресторан."
+]
+],
+"x": [
+[
+"Živim u ___. (grad)",
+[
+"grad",
+"grada",
+"gradu",
+"gradom"
+],
+2,
+"u + где? → -u: u gradu."
+],
+[
+"Radim u ___. (prodavnica)",
+[
+"prodavnicu",
+"prodavnici",
+"prodavnice",
+"prodavnica"
+],
+1,
+"Ж.р. локатив: -i: u prodavnici."
+],
+[
+"Ona je na ___. (posao)",
+[
+"posao",
+"posla",
+"poslu",
+"poslom"
+],
+2,
+"na poslu: -u, беглое -a- выпадает."
+],
+[
+"Idem u ___. (centar)",
+[
+"centru",
+"centar",
+"centra",
+"centrom"
+],
+1,
+"Куда? → винительный: u centar."
+],
+[
+"Živim u ___. (kuća)",
+[
+"kuću",
+"kući",
+"kuće",
+"kuća"
+],
+1,
+"Где? → локатив: u kući."
+],
+[
+"Ja sam u ___. (park)",
+[
+"park",
+"parka",
+"parku",
+"parkom"
+],
+2,
+"Gde? u parku."
+],
+[
+"Razgovaramo o ___. (posao)",
+[
+"posao",
+"posla",
+"poslu",
+"poslom"
+],
+2,
+"o + локатив: o poslu."
+]
+]
+},
+{
+"id": "a1-08",
+"lvl": "A1",
+"n": 8,
+"title": "Прилагательные и «мой / твой»",
+"g": [
+{
+"h": "Согласование",
+"t": "Прилагательное совпадает с существительным по роду, числу и падежу. В именительном: <b>nov grad</b>, <b>nova kuća</b>, <b>novo auto</b>. Окончания: м.р. <b>–</b>, ж.р. <b>-a</b>, ср.р. <b>-o</b>."
+},
+{
+"h": "Мой, твой, наш, ваш",
+"t": "<b>moj / moja / moje</b>, <b>tvoj / tvoja / tvoje</b>, <b>naš / naša / naše</b>, <b>vaš / vaša / vaše</b>. Они тоже согласуются: <b>moj brat, moja sestra, moje auto</b>."
+},
+{
+"h": "Сказуемое",
+"t": "<b>Kuća je velika.</b> <b>Grad je lep.</b> <b>Auto je staro.</b> Глагол je обязателен."
+}
+],
+"w": [
+[
+"lep",
+"красивый"
+],
+[
+"dobar",
+"хороший"
+],
+[
+"veliki",
+"большой"
+],
+[
+"mali",
+"маленький"
+],
+[
+"nov",
+"новый"
+],
+[
+"star",
+"старый"
+],
+[
+"skup",
+"дорогой"
+],
+[
+"jeftin",
+"дешёвый"
+],
+[
+"moj",
+"мой"
+],
+[
+"tvoj",
+"твой"
+],
+[
+"naš",
+"наш"
+],
+[
+"vaš",
+"ваш"
+]
+],
+"d": [
+[
+"Ovo je moja kuća.",
+"Это мой дом."
+],
+[
+"Tvoja kuća je velika i lepa.",
+"Твой дом большой и красивый."
+],
+[
+"Naš stan je mali, ali nov.",
+"Наша квартира маленькая, но новая."
+],
+[
+"Je li tvoje auto novo?",
+"Твоя машина новая?"
+],
+[
+"Ne, moje auto je staro, ali dobro.",
+"Нет, моя машина старая, но хорошая."
+],
+[
+"Ova kafa je skupa, a ovo pivo je jeftino.",
+"Этот кофе дорогой, а это пиво дешёвое."
+]
+],
+"x": [
+[
+"___ kuća je velika.",
+[
+"Moj",
+"Moja",
+"Moje",
+"Moji"
+],
+1,
+"Kuća — ж.р.: moja."
+],
+[
+"___ auto je novo.",
+[
+"Moj",
+"Moja",
+"Moje",
+"Moji"
+],
+2,
+"Auto — ср.р.: moje."
+],
+[
+"Ovaj grad je ___.",
+[
+"lepa",
+"lep",
+"lepo",
+"lepe"
+],
+1,
+"Grad — м.р.: lep."
+],
+[
+"Ova knjiga je ___.",
+[
+"stara",
+"star",
+"staro",
+"stare"
+],
+0,
+"Knjiga — ж.р.: stara."
+],
+[
+"Ono selo je ___.",
+[
+"mali",
+"mala",
+"malo",
+"male"
+],
+2,
+"Selo — ср.р.: malo."
+],
+[
+"Tvoj brat je ___.",
+[
+"dobra",
+"dobar",
+"dobro",
+"dobre"
+],
+1,
+"Brat — м.р.: dobar."
+],
+[
+"Naša ___ je nova.",
+[
+"stan",
+"škola",
+"auto",
+"hleb"
+],
+1,
+"Naša — ж.р.: подходит škola."
+]
+]
+},
+{
+"id": "a1-09",
+"lvl": "A1",
+"n": 9,
+"title": "Родительный падеж",
+"g": [
+{
+"h": "Когда нужен",
+"t": "Родительный (<b>genitiv</b>): <b>koga? čega?</b> После <b>nemam, nema</b>, после предлогов <b>bez, od, iz, do, kod, pored, posle, pre</b>, для принадлежности и после слов «много, мало»: <b>mnogo posla</b>."
+},
+{
+"h": "Окончания",
+"t": "Мужской <b>-a</b>: <b>brat → brata, grad → grada</b>. Женский <b>-e</b>: <b>kuća → kuće, kafa → kafe, žena → žene</b>. Средний <b>-a</b>: <b>more → mora, mleko → mleka</b>."
+},
+{
+"h": "Беглое -a-",
+"t": "В некоторых словах гласный выпадает: <b>posao → posla, novac → novca, otac → oca, dan → dana, pas → psa</b>. Такие слова запоминайте парами."
+},
+{
+"h": "Что отличается от русского",
+"t": "<b>Imam brata</b>, а не «kod mene je»; <b>kod</b> = у, к: <b>idem kod brata</b>. <b>Posle posla</b> = после работы; <b>pre sat vremena</b> = час назад."
+}
+],
+"w": [
+[
+"nema",
+"нет"
+],
+[
+"bez",
+"без"
+],
+[
+"od",
+"от, из"
+],
+[
+"iz",
+"из"
+],
+[
+"do",
+"до"
+],
+[
+"kod",
+"у, к"
+],
+[
+"pored",
+"рядом с"
+],
+[
+"posle",
+"после"
+],
+[
+"pre",
+"до, перед"
+],
+[
+"mnogo",
+"много"
+],
+[
+"malo",
+"мало"
+],
+[
+"dosta",
+"достаточно"
+]
+],
+"d": [
+[
+"Odakle si? Iz Rusije, a ti?",
+"Откуда ты? Из России, а ты?"
+],
+[
+"Ja sam iz Niša.",
+"Я из Ниша."
+],
+[
+"Ne mogu bez kafe.",
+"Не могу без кофе."
+],
+[
+"Nema kafe, nema ni mleka.",
+"Нет кофе, нет и молока."
+],
+[
+"Idem kod brata posle posla.",
+"Иду к брату после работы."
+],
+[
+"Imam mnogo posla i malo vremena.",
+"У меня много работы и мало времени."
+]
+],
+"x": [
+[
+"Nemam ___. (novac)",
+[
+"novac",
+"novca",
+"novcu",
+"novcem"
+],
+1,
+"nemam + родительный: novca (беглое -a-)."
+],
+[
+"Ne mogu bez ___. (kafa)",
+[
+"kafu",
+"kafe",
+"kafi",
+"kafom"
+],
+1,
+"bez + родительный: kafe."
+],
+[
+"Dolazim iz ___. (Rusija)",
+[
+"Rusiju",
+"Rusije",
+"Rusiji",
+"Rusijom"
+],
+1,
+"iz + родительный: Rusije."
+],
+[
+"Idem kod ___. (brat)",
+[
+"brat",
+"brata",
+"bratu",
+"bratom"
+],
+1,
+"kod + родительный: brata."
+],
+[
+"Imam mnogo ___. (posao)",
+[
+"posao",
+"posla",
+"poslu",
+"poslom"
+],
+1,
+"mnogo + родительный: posla."
+],
+[
+"Pored ___ je park. (škola)",
+[
+"školu",
+"škole",
+"školi",
+"školom"
+],
+1,
+"pored + родительный: škole."
+],
+[
+"Posle ___ idem kući. (posao)",
+[
+"posao",
+"posla",
+"poslu",
+"poslom"
+],
+1,
+"posle + родительный: posla."
+]
+]
+},
+{
+"id": "a1-10",
+"lvl": "A1",
+"n": 10,
+"title": "Дательный падеж",
+"g": [
+{
+"h": "Кому? Чему?",
+"t": "Дательный (<b>dativ</b>): <b>kome? čemu?</b> Адресат действия: <b>dajem poklon bratu</b>, <b>pomažem sestri</b>, <b>pišem majci</b>. Окончания: мужской и средний <b>-u</b>, женский <b>-i</b>."
+},
+{
+"h": "Женский род: k → c, g → z",
+"t": "<b>majka → majci</b>, <b>knjiga → knjizi</b>, <b>sestra → sestri</b>, <b>žena → ženi</b>."
+},
+{
+"h": "Конструкции с дательным",
+"t": "<b>Treba mi knjiga</b> — мне нужна книга. <b>Sviđa mi se grad</b> — мне нравится город. <b>Hvala ti</b> — спасибо тебе. Короткие формы: <b>mi, ti, mu, joj, nam, vam, im</b>. Они безударные и стоят на втором месте: <b>Sviđa mi se</b>, а не «Mi se sviđa»."
+}
+],
+"w": [
+[
+"dajem",
+"даю"
+],
+[
+"pomažem",
+"помогаю"
+],
+[
+"kažem",
+"говорю, скажу"
+],
+[
+"pokazujem",
+"показываю"
+],
+[
+"poklon",
+"подарок"
+],
+[
+"pismo",
+"письмо"
+],
+[
+"pitanje",
+"вопрос"
+],
+[
+"odgovor",
+"ответ"
+],
+[
+"treba mi",
+"мне нужно"
+],
+[
+"sviđa mi se",
+"мне нравится"
+],
+[
+"hvala",
+"спасибо"
+],
+[
+"molim",
+"пожалуйста"
+]
+],
+"d": [
+[
+"Šta ti treba?",
+"Что тебе нужно?"
+],
+[
+"Treba mi knjiga.",
+"Мне нужна книга."
+],
+[
+"Dajem poklon bratu.",
+"Дарю подарок брату."
+],
+[
+"Pomažem sestri i majci.",
+"Помогаю сестре и маме."
+],
+[
+"Sviđa mi se ovaj grad.",
+"Мне нравится этот город."
+],
+[
+"Hvala ti, i hvala tvojoj majci.",
+"Спасибо тебе и твоей маме."
+]
+],
+"x": [
+[
+"Dajem knjigu ___. (brat)",
+[
+"brata",
+"bratu",
+"bratom",
+"brate"
+],
+1,
+"Кому? → дательный: bratu."
+],
+[
+"Pomažem ___. (sestra)",
+[
+"sestru",
+"sestre",
+"sestri",
+"sestrom"
+],
+2,
+"Ж.р. дательный: -i: sestri."
+],
+[
+"Pišem pismo ___. (majka)",
+[
+"majku",
+"majke",
+"majci",
+"majkom"
+],
+2,
+"k → c: majci."
+],
+[
+"Šta ___ treba? (тебе)",
+[
+"te",
+"ti",
+"tebe",
+"tobom"
+],
+1,
+"treba + дательный: šta ti treba?"
+],
+[
+"Sviđa ___ se kuća. (мне)",
+[
+"me",
+"mi",
+"mene",
+"mnom"
+],
+1,
+"Sviđa mi se."
+],
+[
+"Hvala ___! (вам)",
+[
+"vi",
+"vas",
+"vama",
+"vaša"
+],
+2,
+"hvala + дательный: hvala vama."
+],
+[
+"Dajem poklon ___. (prijatelj)",
+[
+"prijatelj",
+"prijatelja",
+"prijatelju",
+"prijateljem"
+],
+2,
+"Дательный: prijatelju."
+]
+]
+},
+{
+"id": "a1-11",
+"lvl": "A1",
+"n": 11,
+"title": "Творительный падеж",
+"g": [
+{
+"h": "С кем? Чем?",
+"t": "Творительный (<b>instrumental</b>): <b>kim? čim?</b> Средство и компания: <b>pišem olovkom</b>, <b>idem autobusom</b>, <b>razgovaram sa prijateljem</b>. Окончание у мужского, женского и среднего рода <b>-om</b> (после мягкого согласного <b>-em</b>)."
+},
+{
+"h": "Примеры",
+"t": "<b>autobus → autobusom</b>, <b>žena → ženom</b>, <b>kafa → kafom</b>, <b>more → morem</b>, <b>prijatelj → prijateljem</b>."
+},
+{
+"h": "Предлог sa (s)",
+"t": "<b>sa</b> значит «с»: <b>sa bratom, sa sestrom</b>. Перед согласными можно <b>s</b>: s bratom. Транспорт без предлога: <b>putujem vozom</b>."
+}
+],
+"w": [
+[
+"sa",
+"с"
+],
+[
+"autobus",
+"автобус"
+],
+[
+"voz",
+"поезд"
+],
+[
+"avion",
+"самолёт"
+],
+[
+"taksi",
+"такси"
+],
+[
+"olovka",
+"карандаш"
+],
+[
+"prijatelj",
+"друг"
+],
+[
+"porodica",
+"семья"
+],
+[
+"putovati",
+"путешествовать"
+],
+[
+"kolega",
+"коллега"
+],
+[
+"razgovarati",
+"разговаривать"
+],
+[
+"peške",
+"пешком"
+]
+],
+"d": [
+[
+"Kako ideš na posao?",
+"Как ты едешь на работу?"
+],
+[
+"Idem autobusom, a ponekad taksijem.",
+"Езжу автобусом, а иногда на такси."
+],
+[
+"Sa kim razgovaraš?",
+"С кем ты разговариваешь?"
+],
+[
+"Razgovaram sa prijateljem.",
+"Разговариваю с другом."
+],
+[
+"Putujem vozom sa porodicom.",
+"Еду на поезде с семьёй."
+],
+[
+"Pišem olovkom.",
+"Пишу карандашом."
+]
+],
+"x": [
+[
+"Idem ___. (autobus)",
+[
+"autobus",
+"autobusa",
+"autobusu",
+"autobusom"
+],
+3,
+"Транспорт — творительный: autobusom."
+],
+[
+"Razgovaram sa ___. (prijatelj)",
+[
+"prijatelja",
+"prijatelju",
+"prijateljem",
+"prijatelj"
+],
+2,
+"sa + творительный; после мягкого j: -em."
+],
+[
+"Pišem ___. (olovka)",
+[
+"olovku",
+"olovkom",
+"olovke",
+"olovci"
+],
+1,
+"Средство — творительный: olovkom."
+],
+[
+"Putujem sa ___. (porodica)",
+[
+"porodicu",
+"porodice",
+"porodici",
+"porodicom"
+],
+3,
+"sa + творительный: porodicom."
+],
+[
+"Putujem ___. (voz)",
+[
+"voz",
+"voza",
+"vozu",
+"vozom"
+],
+3,
+"Putujem vozom."
+],
+[
+"Kafa sa ___. (mleko)",
+[
+"mleko",
+"mleka",
+"mleku",
+"mlekom"
+],
+3,
+"sa + творительный: mlekom."
+],
+[
+"Razgovaram sa ___. (kolega)",
+[
+"kolegu",
+"kolege",
+"kolegi",
+"kolegom"
+],
+3,
+"Kolega м.р. на -a: kolegom."
+]
+]
+},
+{
+"id": "a1-12",
+"lvl": "A1",
+"n": 12,
+"title": "Звательный падеж и местоимения по падежам",
+"g": [
+{
+"h": "Звательный (vokativ)",
+"t": "Форма для обращения. Мужской: <b>Marko → Marko!</b> <b>Ivan → Ivane!</b> <b>brat → brate!</b> <b>prijatelj → prijatelju!</b> Женский на -a: <b>Ana → Ano!</b> <b>majka → majko!</b> <b>sestra → sestro!</b> В живой речи он обязателен."
+},
+{
+"h": "Местоимения в падежах",
+"t": "Ударные формы: <b>mene, tebe, njega, nju, nas, vas, njih</b> и далее <b>meni, tebi, njemu, njoj, nama, vama, njima</b>. Творительный: <b>mnom, tobom, njim, njom, nama, vama, njima</b>."
+},
+{
+"h": "Короткие формы (клитики)",
+"t": "Винительный: <b>me, te, ga, je, nas, vas, ih</b>. Дательный: <b>mi, ti, mu, joj, nam, vam, im</b>. Стоят на втором месте: <b>Vidim te.</b> <b>Dajem ti poklon.</b> После предлога нужна полная форма: <b>za mene, sa mnom, kod njega, o tebi</b>."
+}
+],
+"w": [
+[
+"mene",
+"меня"
+],
+[
+"meni",
+"мне"
+],
+[
+"mnom",
+"мной"
+],
+[
+"tebe",
+"тебя"
+],
+[
+"tebi",
+"тебе"
+],
+[
+"tobom",
+"тобой"
+],
+[
+"njega",
+"его"
+],
+[
+"njemu",
+"ему"
+],
+[
+"nju",
+"её"
+],
+[
+"njoj",
+"ей"
+],
+[
+"nas",
+"нас"
+],
+[
+"vama",
+"вам"
+]
+],
+"d": [
+[
+"Marko, gde si?",
+"Марко, где ты?"
+],
+[
+"Ana, vidim te!",
+"Ана, я тебя вижу!"
+],
+[
+"Dajem ti poklon.",
+"Дарю тебе подарок."
+],
+[
+"Razgovaram o tebi i o njemu.",
+"Говорю о тебе и о нём."
+],
+[
+"Idem sa tobom kod nje.",
+"Иду с тобой к ней."
+],
+[
+"Majko, ti si uvek sa mnom.",
+"Мама, ты всегда со мной."
+]
+],
+"x": [
+[
+"Vidim ___. (тебя)",
+[
+"te",
+"ti",
+"tobom",
+"tebi"
+],
+0,
+"Винительный клитик: te."
+],
+[
+"Dajem ___ knjigu. (ему)",
+[
+"ga",
+"mu",
+"njim",
+"on"
+],
+1,
+"Дательный клитик: mu."
+],
+[
+"Idem sa ___. (мной)",
+[
+"mene",
+"meni",
+"mnom",
+"me"
+],
+2,
+"sa + творительный: sa mnom."
+],
+[
+"Razgovaramo o ___. (нём)",
+[
+"njega",
+"njemu",
+"njim",
+"on"
+],
+1,
+"o + локатив: o njemu."
+],
+[
+"Ej, ___! (brat)",
+[
+"brat",
+"brata",
+"brate",
+"bratu"
+],
+2,
+"Звательный: brate."
+],
+[
+"Ona ___ voli. (меня)",
+[
+"mi",
+"me",
+"mnom",
+"ja"
+],
+1,
+"Винительный клитик: me."
+],
+[
+"Kupujem ___ poklon. (ей)",
+[
+"je",
+"joj",
+"ona",
+"njom"
+],
+1,
+"Дательный клитик: joj."
+]
+]
+}
+]
+}
