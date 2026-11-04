@@ -28,6 +28,7 @@ function vRef(){
 
 function renderTabs(){
   const due=dueKeys().length;
+  const hd=$('#hdot');if(hd)hd.hidden=!due;
   $('#tabs').innerHTML=TABS.map(t=>'<button class="tab" data-a="tab" data-t="'+t[0]+'" aria-current="'+(S.tab===t[0])+'"><b>'+t[1]+'</b>'+t[2]+(t[0]==='review'&&due?' <span class="dot"></span>':'')+'</button>').join('');
 }
 function render(){
@@ -56,12 +57,15 @@ function playSeq(texts){
   step();
 }
 
+function menu(open){const n=$('#tabs'),h=$('#handle');if(!n||!n.classList)return;const o=open===undefined?!n.classList.contains('open'):open;n.classList.toggle('open',o);if(h)h.setAttribute('aria-expanded',String(o))}
 document.addEventListener('click',e=>{
+  if(!e.target.closest('#tabs')&&!e.target.closest('#handle'))menu(false);
   const el=e.target.closest('[data-a]');if(!el)return;
   const a=el.dataset.a,d=el.dataset;
   const L=S.open?lesson(S.open):null,p=L?progOf(L.id):null;
   switch(a){
-  case'tab':S.tab=d.t;cur={};save();render();up();return;
+  case'menu':menu();return;
+  case'tab':menu(false);S.tab=d.t;cur={};save();render();up();return;
   case'open':S.open=d.id;S.tab='course';S.last={type:'lesson',id:d.id};progOf(d.id);cur={};save();render();up();return;
   case'home':S.open=null;cur={};save();render();up();return;
   case'step':p.step=+d.n;cur={};save();render();up();return;
@@ -117,6 +121,7 @@ document.addEventListener('click',e=>{
 });
 document.addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target&&e.target.id==='wi'){e.preventDefault();const b=document.querySelector('[data-a=dcheck]');if(b)b.click()}});
 document.addEventListener('input',e=>{if(e.target&&e.target.id==='wi')cur.val=e.target.value;if(e.target&&e.target.id==='bk')cur.bk=e.target.value});
+window.addEventListener('scroll',()=>menu(false),{passive:true});
 document.addEventListener('visibilitychange',()=>{if(document.hidden){const a=carAudio();if(a&&a.src&&S.car.id){S.car.t=a.currentTime;save()}}});
 
 (async function(){

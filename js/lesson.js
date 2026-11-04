@@ -57,6 +57,7 @@ function srsAdd(key){S.srs[key]={box:0,due:today()}}
 function qKey(L,t,i){return (t==='w'?'w':t==='x'?'x':'l')+':'+L.id+':'+i}
 
 /* ---- views ---- */
+function paras(t){return '<p>'+t.replace(/([.!?])\s+(?=[A-ZА-ЯЁ])/g,'$1</p><p>')+'</p>'}
 function stepsBar(p){return '<div class="steps">'+STEPS.map((s,i)=>'<i class="'+(i<=p.step?'on':'')+'"></i>').join('')+'</div>'}
 function vLesson(){
   const L=lesson(S.open);if(!L)return vCourse();
@@ -64,7 +65,7 @@ function vLesson(){
   const head='<div class="row spread"><button class="btn ghost" style="width:auto" data-a="home">← Курс</button><span class="label">'+L.lvl+' · урок '+L.n+'</span></div><h2>'+esc(L.title)+'</h2>'+stepsBar(p)+'<p class="small muted">Шаг '+(p.step+1)+' из 5: '+STEPS[p.step]+'. Можно закрыть в любой момент, приложение вернёт вас сюда.</p>';
   let body='';
   if(p.step===0){
-    body=L.g.map(b=>'<div class="card"><h3>'+esc(b.h)+'</h3><p>'+b.t+'</p></div>').join('')+(L.pr?'<div class="card"><h3>Произношение</h3><p>'+L.pr+'</p></div>':'')+'<button class="btn primary" data-a="step" data-n="1">К словам</button>';
+    body=L.g.map(b=>'<div class="card"><h3>'+esc(b.h)+'</h3>'+paras(b.t)+'</div>').join('')+(L.pr?'<div class="card"><h3>Произношение</h3>'+paras(L.pr)+'</div>':'')+'<button class="btn primary" data-a="step" data-n="1">К словам</button>';
   }else if(p.step===1){
     body='<div class="card"><div class="row spread"><span class="label">Слова урока</span><button class="btn ghost" style="width:auto;padding:8px 12px;min-height:40px" data-a="hide">'+(cur.hide?'Показать перевод':'Скрыть перевод')+'</button></div>'+
     L.w.map((w,i)=>'<div class="wrow"><button class="play" aria-label="Слушать" data-a="clip" data-t="'+esc(w[0])+'">▶</button><div class="wt"><span class="sr" style="font-size:20px">'+esc(disp(w[0]))+'</span><br><span class="muted" '+(cur.hide&&!(cur.open||{})[i]?'data-a="open-w" data-i="'+i+'" style="cursor:pointer"':'')+'>'+(cur.hide&&!(cur.open||{})[i]?'· · · нажмите, чтобы показать':esc(w[1]))+'</span></div></div>').join('')+'</div>'+

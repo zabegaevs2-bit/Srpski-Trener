@@ -94,3 +94,46 @@ td b{color:var(--crvena)}
 input[type=range]{width:100%}
 textarea{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:10px;width:100%;min-height:90px}
 details summary{cursor:pointer;min-height:44px;display:flex;align-items:center}
+
+/* ---- v2: readability + slide-up menu ---- */
+:root{--muted:#4b5872}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--muted:#aab6d0}}
+:root[data-theme="dark"]{--muted:#aab6d0}
+body{font-size:17px;line-height:1.6;padding-block:18px calc(56px + env(safe-area-inset-bottom,0px))}
+#app{gap:18px}
+h1{font-size:30px;line-height:1.2}
+h2{font-size:24px}
+h3{font-size:19px;margin-bottom:2px}
+.card{padding:18px;gap:12px}
+.card p{line-height:1.65;margin:0}
+.card p+p{margin-top:.7em}
+.card p b{color:var(--plava);font-weight:600}
+.small{font-size:14px}
+.label{font-size:12px;letter-spacing:.07em}
+.sent{font-size:22px;line-height:1.5}
+.btn{padding:14px 16px;font-size:17px;line-height:1.4}
+.expl{font-size:16px;line-height:1.6;padding:12px 14px}
+.expl b{color:inherit}
+.pill{font-size:12px}
+.wrow{padding:13px 0;gap:14px}
+.wrow .wt{line-height:1.5}
+.lesson .tt{line-height:1.45}
+.lesson .tt b{font-size:17px}
+th,td{padding:10px 12px;font-size:15px}
+th{font-size:12px}
+.opts{gap:10px}
+.row{gap:12px}
+.toks,.built{gap:10px}
+.tok{font-size:19px;padding:11px 14px}
+.toast{bottom:calc(64px + env(safe-area-inset-bottom,0px))}
+
+/* slide-up menu: hidden by default, opened by tapping the bottom handle */
+.handle{position:fixed;left:0;right:0;bottom:0;z-index:7;height:calc(34px + env(safe-area-inset-bottom,0px));padding-bottom:env(safe-area-inset-bottom,0px);
+  background:var(--surface);border:0;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:center;gap:10px;color:var(--muted);font-size:14px;cursor:pointer}
+.handle i{width:44px;height:5px;border-radius:99px;background:var(--line);display:block}
+.handle .dot{position:static}
+.tabs{bottom:calc(34px + env(safe-area-inset-bottom,0px));padding:6px 8px;transform:translateY(160%);visibility:hidden;border-top:1px solid var(--line);box-shadow:0 -6px 20px rgba(0,0,0,.12)}
+.tabs.open{transform:none;visibility:visible}
+@media (prefers-reduced-motion:no-preference){.tabs{transition:transform .18s ease,visibility .18s}}
+.tab{min-height:48px;padding:6px 2px;font-size:15px;gap:0;flex-direction:row;justify-content:center}
+.tab b{font-size:15px;display:none}
