@@ -17,6 +17,7 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -31,6 +32,8 @@ jobs:
           path: audio/clips
           key: clips-${{ hashFiles('data/course.json') }}
           restore-keys: clips-
+      - name: Install ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - name: Generate audio
         run: |
           pip install edge-tts
