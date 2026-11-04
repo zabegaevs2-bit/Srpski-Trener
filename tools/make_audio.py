@@ -1,0 +1,130 @@
+#!/usr/bin/env python3
+"""Generates audio for the course: single clips and per-lesson "car" tracks.
+
+Reads  data/course.json
+Writes audio/clips/*.mp3, audio/car/*.mp3, audio/manifest.json
+
+Needs: pip install edge-tts, and ffmpeg/ffprobe in PATH.
+Set FAKE_TTS=1 to test the pipeline offline (tones instead of speech).
+"""
+import asyncio, hashlib, json, os, subprocess, sys, tempfile
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+OUT = ROOT / "audio"
+CLIPS = OUT / "clips"
+CAR = OUT / "car"
+VOICE = {"sr": "sr-RS-SophieNeural", "ru": "ru-RU-SvetlanaNeural"}
+FAKE = os.environ.get("FAKE_TTS") == "1"
+SR_RATE = "-5%"
+
+
+def run(*cmd):
+    subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+
+def clip_path(lang, text):
+    h = hashlib.sha1(f"{lang}|{text}".encode()).hexdigest()[:12]
+    return CLIPS / f"{lang}-{h}.mp3"
+
+
+async def synth(lang, text):
+    p = clip_path(lang, text)
+    if p.exists() and p.stat().st_size > 500:
+        return p
+    if FAKE:
+        run("ffmpeg", "-y", "-f", "lavfi", "-i", f"sine=frequency={300 + len(text) * 7}:duration={0.4 + len(text) * 0.06:.2f}",
+            "-ar", "24000", "-ac", "1", "-b:a", "48k", str(p))
+        return p
+    import edge_tts
+    for attempt in range(5):
+        try:
+            rate = SR_RATE if lang == "sr" else "+0%"
+            await edge_tts.Communicate(text, VOICE[lang], rate=rate).save(str(p))
+            if p.stat().st_size > 500:
+                return p
+        except Exception as e:  # network hiccup: retry
+            print("retry", lang, text[:30], e, file=sys.stderr)
+            await asyncio.sleep(2 + attempt * 2)
+    raise RuntimeError(f"TTS failed: {lang} {text}")
+
+
+def duration(path):
+    out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(path)],
+                         capture_output=True, text=True, check=True).stdout.strip()
+    return float(out)
+
+
+def silence(seconds, tmp):
+    p = Path(tmp) / f"sil-{seconds:.2f}.mp3"
+    if not p.exists():
+        run("ffmpeg", "-y", "-f", "lavfi", "-i", "anullsrc=r=24000:cl=mono", "-t", f"{seconds:.2f}",
+            "-ar", "24000", "-ac", "1", "-b:a", "48k", str(p))
+    return p
+
+
+async def main():
+    course = json.loads((ROOT / "data" / "course.json").read_text(encoding="utf-8"))
+    CLIPS.mkdir(parents=True, exist_ok=True)
+    CAR.mkdir(parents=True, exist_ok=True)
+    sem = asyncio.Semaphore(6)
+
+    async def limited(lang, text):
+        async with sem:
+            return await synth(lang, text)
+
+    # 1. every Serbian and Russian text used by the course
+    wanted = set()
+    for L in course["lessons"]:
+        wanted.add(("ru", f"Урок {L['n']}. {L['title']}."))
+        for sr, ru in L["w"] + L["d"]:
+            wanted.add(("sr", sr))
+            wanted.add(("ru", ru))
+    await asyncio.gather(*[limited(l, t) for l, t in wanted])
+
+    manifest = {"clips": {}, "car": {}}
+    for lang, text in wanted:
+        if lang == "sr":
+            manifest["clips"][text] = "clips/" + clip_path(lang, text).name
+
+    # 2. car tracks: RU prompt -> pause -> SR -> pause to repeat -> SR
+    with tempfile.TemporaryDirectory() as tmp:
+        for L in course["lessons"]:
+            parts, cues, t = [], [], 0.0
+
+            def add(path, cue=None):
+                nonlocal t
+                if cue:
+                    cues.append([round(t, 2)] + cue)
+                parts.append(path)
+                t += duration(path)
+
+            def gap(sec):
+                nonlocal t
+                parts.append(silence(sec, tmp))
+                t += sec
+
+            add(clip_path("ru", f"Урок {L['n']}. {L['title']}."), ["", L["title"], "intro"])
+            gap(1.2)
+            for kind, items in (("word", L["w"]), ("line", L["d"])):
+                for sr, ru in items:
+                    add(clip_path("ru", ru), [sr, ru, kind])
+                    gap(1.2)
+                    d = duration(clip_path("sr", sr))
+                    add(clip_path("sr", sr))
+                    gap(d + 1.5)  # time to repeat aloud
+                    add(clip_path("sr", sr))
+                    gap(1.4)
+            lst = Path(tmp) / f"{L['id']}.txt"
+            lst.write_text("".join(f"file '{p}'\n" for p in parts), encoding="utf-8")
+            out = CAR / f"{L['id']}.mp3"
+            run("ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(lst),
+                "-ar", "24000", "-ac", "1", "-b:a", "48k", str(out))
+            manifest["car"][L["id"]] = {"file": f"car/{L['id']}.mp3", "dur": round(t, 1), "cues": cues}
+            print(L["id"], f"{t/60:.1f} min")
+
+    (OUT / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False), encoding="utf-8")
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
