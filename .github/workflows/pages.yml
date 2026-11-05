@@ -30,8 +30,8 @@ jobs:
         uses: actions/cache@v4
         with:
           path: audio/clips
-          key: clips-${{ hashFiles('data/course.json') }}
-          restore-keys: clips-
+          key: clips-v2-${{ hashFiles('data/course.json') }}
+          restore-keys: clips-v2-
       - name: Install ffmpeg
         run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - name: Generate audio

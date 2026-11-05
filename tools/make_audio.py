@@ -23,8 +23,27 @@ def run(*cmd):
     subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
 
+# Microsoft's Serbian neural voices are trained on Cyrillic. Fed Latin text they
+# fall back to English letter rules, so Serbian is transliterated before synthesis.
+_DI = {"lj": "љ", "nj": "њ", "dž": "џ", "Lj": "Љ", "Nj": "Њ", "Dž": "Џ", "LJ": "Љ", "NJ": "Њ", "DŽ": "Џ"}
+_CH = dict(zip("abvgdđežzijklmnoprstćufhcčšABVGDĐEŽZIJKLMNOPRSTĆUFHCČŠ",
+               "абвгдђежзијклмнопрстћуфхцчшАБВГДЂЕЖЗИЈКЛМНОПРСТЋУФХЦЧШ"))
+_CH.update({"z": "з", "ž": "ж", "Z": "З", "Ž": "Ж"})
+
+
+def to_cyr(text):
+    out, i = [], 0
+    while i < len(text):
+        two = text[i:i + 2]
+        if two in _DI:
+            out.append(_DI[two]); i += 2
+        else:
+            out.append(_CH.get(text[i], text[i])); i += 1
+    return "".join(out)
+
+
 def clip_path(lang, text):
-    h = hashlib.sha1(f"{lang}|{text}".encode()).hexdigest()[:12]
+    h = hashlib.sha1(f"v2|{lang}|{text}".encode()).hexdigest()[:12]
     return CLIPS / f"{lang}-{h}.mp3"
 
 
@@ -40,7 +59,8 @@ async def synth(lang, text):
     for attempt in range(5):
         try:
             rate = SR_RATE if lang == "sr" else "+0%"
-            await edge_tts.Communicate(text, VOICE[lang], rate=rate).save(str(p))
+            spoken = to_cyr(text) if lang == "sr" else text
+            await edge_tts.Communicate(spoken, VOICE[lang], rate=rate).save(str(p))
             if p.stat().st_size > 500:
                 return p
         except Exception as e:  # network hiccup: retry
