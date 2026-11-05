@@ -137,3 +137,8 @@ th{font-size:12px}
 @media (prefers-reduced-motion:no-preference){.tabs{transition:transform .18s ease,visibility .18s}}
 .tab{min-height:48px;padding:6px 2px;font-size:15px;gap:0;flex-direction:row;justify-content:center}
 .tab b{font-size:15px;display:none}
+
+/* v3: let the page scroll to the very end (fixed height clipped the bottom padding on iOS) */
+html,body{height:auto;min-height:100%}
+#app{padding-bottom:calc(110px + env(safe-area-inset-bottom,0px))}
+body{padding-block:18px 0}
