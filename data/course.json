@@ -5366,6 +5366,1080 @@
 "Pada kiša — именительный падеж."
 ]
 ]
+},
+{
+"id": "b2-01",
+"lvl": "B2",
+"n": 1,
+"title": "Причастия и деепричастия",
+"g": [
+{
+"h": "Деепричастие настоящего времени",
+"t": "Показывает действие, происходящее одновременно с главным. Образуется от 3-го лица множественного числа настоящего времени: отбросьте <b>-u</b> и добавьте <b>-ći</b>. <b>čitaju → čitajući</b>, <b>pišu → pišući</b>, <b>govore → govoreći</b>, <b>idu → idući</b>. <b>Idući kući, sreo sam druga.</b> — Идя домой, я встретил друга."
+},
+{
+"h": "Деепричастие прошедшего времени",
+"t": "Показывает действие, которое завершилось раньше главного. Образуется от основы инфинитива с окончанием <b>-vši</b>: <b>pročitavši, došavši, rekavši</b>. <b>Pročitavši pismo, odmah sam ga pozvao.</b> Эта форма встречается в основном в письменной речи."
+},
+{
+"h": "Страдательное причастие",
+"t": "Образуется с помощью <b>-n, -en, -t</b> и согласуется с существительным как прилагательное: <b>napisan, napisana, napisano</b>; <b>otvoren, zatvoren, uzet, viđen, urađen</b>. <b>Vrata su zatvorena.</b> Слово <b>vrata</b> — средний род множественного числа."
+},
+{
+"h": "Где они встречаются",
+"t": "Деепричастия обычны в литературе и публицистике. В разговорной речи вместо них используют придаточные с <b>dok</b> и <b>pošto</b>. Но понимать их нужно уверенно."
+}
+],
+"w": [
+[
+"čitajući",
+"читая"
+],
+[
+"govoreći",
+"говоря"
+],
+[
+"idući",
+"идя; следующий"
+],
+[
+"pišući",
+"пиша"
+],
+[
+"gledajući",
+"глядя"
+],
+[
+"noseći",
+"неся"
+],
+[
+"pročitavši",
+"прочитав"
+],
+[
+"došavši",
+"придя"
+],
+[
+"rekavši",
+"сказав"
+],
+[
+"napisan",
+"написан"
+],
+[
+"zatvoren",
+"закрыт"
+],
+[
+"otvoren",
+"открыт"
+]
+],
+"d": [
+[
+"Gledajući film, jedem kokice.",
+"Смотря фильм, ем попкорн."
+],
+[
+"Idući kući, sreo sam starog druga.",
+"Идя домой, я встретил старого друга."
+],
+[
+"Pročitavši pismo, odmah sam ga pozvao.",
+"Прочитав письмо, я сразу ему позвонил."
+],
+[
+"Vrata su zatvorena.",
+"Дверь закрыта."
+],
+[
+"Pismo je napisano jučeras.",
+"Письмо написано вчера вечером."
+],
+[
+"Rekavši to, otišao je.",
+"Сказав это, он ушёл."
+]
+],
+"x": [
+[
+"___ kući, sreo sam druga. (idući)",
+[
+"Idući",
+"Idemo",
+"Išao",
+"Ići"
+],
+0,
+"Деепричастие настоящего времени: idući."
+],
+[
+"___ pismo, pozvao sam ga. (pročitati)",
+[
+"Pročitavši",
+"Pročitajući",
+"Pročitao",
+"Čitajući"
+],
+0,
+"Действие закончилось раньше: pročitavši."
+],
+[
+"___, slušam muziku. (raditi)",
+[
+"Radeći",
+"Radim",
+"Radio",
+"Radivši"
+],
+0,
+"Одновременное действие: radeći."
+],
+[
+"Vrata su ___. (zatvoriti)",
+[
+"zatvorena",
+"zatvorila",
+"zatvorene",
+"zatvorilo"
+],
+0,
+"Vrata — средний род мн. числа: zatvorena."
+],
+[
+"Pismo je ___ jučeras. (napisati)",
+[
+"napisano",
+"napisao",
+"napisana",
+"napisan"
+],
+0,
+"Pismo — средний род: napisano."
+],
+[
+"Prozor je ___. (otvoriti)",
+[
+"otvoren",
+"otvorio",
+"otvorena",
+"otvoreno"
+],
+0,
+"Prozor — мужской род: otvoren."
+],
+[
+"___ to, otišao je. (reći)",
+[
+"Rekavši",
+"Govoreći",
+"Rekao",
+"Reći"
+],
+0,
+"Действие завершилось раньше: rekavši."
+]
+]
+},
+{
+"id": "b2-02",
+"lvl": "B2",
+"n": 2,
+"title": "Страдательный залог",
+"g": [
+{
+"h": "Biti + причастие",
+"t": "Страдательный залог образуется из формы <b>biti</b> и страдательного причастия: <b>Pismo je napisano</b>, <b>Kuća je sagrađena</b>, <b>Knjige su objavljene</b>. Причастие согласуется с подлежащим по роду и числу."
+},
+{
+"h": "Деятель действия",
+"t": "Если нужно назвать того, кто совершил действие, используют <b>od strane</b> + родительный падеж: <b>Zakon je izglasan od strane parlamenta.</b> Это звучит официально. В повседневной речи чаще используют действительный залог."
+},
+{
+"h": "Возвратная форма",
+"t": "В разговорной речи страдательное значение обычно передаётся с помощью <b>se</b>: <b>Ovde se prodaju karte</b>, <b>Kako se to piše?</b>, <b>Govori se srpski</b>."
+},
+{
+"h": "Неопределённо-личное",
+"t": "Вместо страдательного залога часто используют форму 3-го лица множественного числа: <b>Kažu da će padati kiša</b> — говорят, что будет дождь. <b>Zatvorili su vrata</b> — закрыли дверь."
+}
+],
+"w": [
+[
+"sagrađen",
+"построен"
+],
+[
+"napisan",
+"написан"
+],
+[
+"uništen",
+"разрушен"
+],
+[
+"otvoren",
+"открыт"
+],
+[
+"zatvoren",
+"закрыт"
+],
+[
+"osnovan",
+"основан"
+],
+[
+"izabran",
+"избран"
+],
+[
+"poznat",
+"известен"
+],
+[
+"objavljen",
+"опубликован"
+],
+[
+"otkriven",
+"открыт, обнаружен"
+],
+[
+"nagrađen",
+"награждён"
+],
+[
+"rođen",
+"родился"
+]
+],
+"d": [
+[
+"Kada je ova kuća sagrađena?",
+"Когда построен этот дом?"
+],
+[
+"Sagrađena je pre pedeset godina.",
+"Построен пятьдесят лет назад."
+],
+[
+"Gde si rođen?",
+"Где ты родился?"
+],
+[
+"Rođen sam u Beogradu.",
+"Я родился в Белграде."
+],
+[
+"Knjiga je objavljena prošle godine.",
+"Книга издана в прошлом году."
+],
+[
+"Ovde se prodaju karte.",
+"Здесь продаются билеты."
+]
+],
+"x": [
+[
+"Kuća je ___ 1990. godine. (sagraditi)",
+[
+"sagrađena",
+"sagradila",
+"sagrađen",
+"sagrađeno"
+],
+0,
+"Kuća — женский род: sagrađena."
+],
+[
+"Ja sam ___ u Beogradu. (мужчина)",
+[
+"rođen",
+"rođena",
+"rođeno",
+"rodio"
+],
+0,
+"Rođen sam — я родился."
+],
+[
+"Knjige su ___ prošle godine. (objaviti)",
+[
+"objavljene",
+"objavljen",
+"objavljeno",
+"objavile"
+],
+0,
+"Knjige — женский род мн. числа: objavljene."
+],
+[
+"Ovde ___ prodaju karte.",
+[
+"se",
+"je",
+"su",
+"sam"
+],
+0,
+"Возвратное значение: se prodaju."
+],
+[
+"Grad je ___ u ratu. (uništiti)",
+[
+"uništen",
+"uništena",
+"uništeno",
+"uništio"
+],
+0,
+"Grad — мужской род: uništen."
+],
+[
+"Prozori su ___. (otvoriti)",
+[
+"otvoreni",
+"otvoren",
+"otvorena",
+"otvoreno"
+],
+0,
+"Prozori — мужской род мн. числа: otvoreni."
+],
+[
+"Sela su ___. (uništiti)",
+[
+"uništena",
+"uništeni",
+"uništene",
+"uništen"
+],
+0,
+"Sela — средний род мн. числа: uništena."
+]
+]
+},
+{
+"id": "b2-03",
+"lvl": "B2",
+"n": 3,
+"title": "Сложные времена и связный рассказ",
+"g": [
+{
+"h": "Давнопрошедшее",
+"t": "<b>Pluskvamperfekat</b> показывает действие, которое произошло раньше другого прошедшего: <b>bio sam</b> + причастие на <b>-l</b>. <b>Kad sam stigao, on je već bio otišao.</b> — Когда я приехал, он уже ушёл. В разговорной речи его часто заменяют простым прошедшим."
+},
+{
+"h": "Будущее II",
+"t": "<b>Futur II</b> образуется из формы <b>budem, budeš, bude, budemo, budete, budu</b> и причастия на <b>-l</b>. Он используется после <b>ako, kad, čim</b> для действия, которое завершится до главного: <b>Kad budem završio, javiću ti se.</b> <b>Ako budeš imao vremena, dođi.</b>"
+},
+{
+"h": "Аорист и имперфект",
+"t": "В литературе и в старых текстах встречаются <b>аорист</b> (<b>dođoh, reče</b>) и <b>имперфект</b> (<b>pevaše</b>). В живой речи они почти не используются, но их надо узнавать при чтении."
+},
+{
+"h": "Последовательность в рассказе",
+"t": "Слова-связки: <b>najpre</b> сначала, <b>zatim, potom</b> затем, <b>posle toga</b> после этого, <b>tada</b> тогда, <b>u međuvremenu</b> тем временем, <b>konačno</b> наконец, <b>na kraju</b> в конце."
+}
+],
+"w": [
+[
+"kad budem",
+"когда я буду (закончу)"
+],
+[
+"ako budem",
+"если я буду"
+],
+[
+"bio sam",
+"я был (раньше)"
+],
+[
+"najpre",
+"сначала"
+],
+[
+"zatim",
+"затем"
+],
+[
+"potom",
+"потом"
+],
+[
+"tada",
+"тогда"
+],
+[
+"posle toga",
+"после этого"
+],
+[
+"u međuvremenu",
+"тем временем"
+],
+[
+"konačno",
+"наконец"
+],
+[
+"na kraju",
+"в конце"
+],
+[
+"pre toga",
+"до этого"
+]
+],
+"d": [
+[
+"Kad budem završio posao, javiću ti se.",
+"Когда закончу работу, дам знать."
+],
+[
+"Ako budeš imao vremena, dođi.",
+"Если будет время, приходи."
+],
+[
+"Kad sam stigao, on je već bio otišao.",
+"Когда я приехал, он уже ушёл."
+],
+[
+"Najpre sam jeo, zatim sam gledao film.",
+"Сначала я поел, затем смотрел фильм."
+],
+[
+"Konačno smo stigli kući.",
+"Наконец мы добрались домой."
+],
+[
+"Posle toga sam otišao na spavanje.",
+"После этого я лёг спать."
+]
+],
+"x": [
+[
+"Kad ___ završio, javiću ti. (ja)",
+[
+"budem",
+"bih",
+"sam",
+"ću"
+],
+0,
+"Futur II: budem + причастие."
+],
+[
+"Ako ___ došao, javi mi. (ti)",
+[
+"budeš",
+"budem",
+"bio si",
+"bi"
+],
+0,
+"Futur II для ti: budeš."
+],
+[
+"Kad sam stigao, on je već ___ otišao.",
+[
+"bio",
+"bila",
+"bilo",
+"bili"
+],
+0,
+"Pluskvamperfekat: bio otišao."
+],
+[
+"Najpre sam jeo, ___ sam gledao film.",
+[
+"zatim",
+"jer",
+"ako",
+"pre"
+],
+0,
+"Zatim — затем."
+],
+[
+"___ smo stigli kući. (наконец)",
+[
+"Konačno",
+"Najpre",
+"Već",
+"Ipak"
+],
+0,
+"Konačno — наконец."
+],
+[
+"Tada sam ___ mlad. (я был)",
+[
+"bio",
+"budem",
+"sam",
+"bih"
+],
+0,
+"Прошедшее время: bio."
+],
+[
+"Posle ___ sam otišao na spavanje.",
+[
+"toga",
+"to",
+"taj",
+"tome"
+],
+0,
+"Posle + родительный: toga."
+]
+]
+},
+{
+"id": "b2-04",
+"lvl": "B2",
+"n": 4,
+"title": "Устойчивые выражения",
+"g": [
+{
+"h": "Приветствия и отклик",
+"t": "<b>Šta ima?</b> — что нового? <b>Kako ide?</b> — как дела? <b>Polako</b> — потихоньку, спокойно. <b>Sve u redu</b> — всё в порядке. <b>Nema problema</b> — без проблем."
+},
+{
+"h": "За столом и в дороге",
+"t": "<b>Prijatno!</b> — приятного аппетита. <b>Živeli!</b> — за здоровье (при тосте). <b>Na zdravlje!</b> — на здоровье. <b>Srećan put!</b> — счастливого пути. <b>Dobro došli!</b> — добро пожаловать. <b>Slobodno</b> — пожалуйста, не стесняйтесь."
+},
+{
+"h": "Эмоции и реакции",
+"t": "<b>Ma daj!</b> — да ну! <b>Nema šanse!</b> — ни за что. <b>Šta god</b> — что угодно. <b>Bez brige</b> — не беспокойся. <b>Svaka čast</b> — браво, честь вам. <b>Sve najbolje</b> — всего наилучшего."
+},
+{
+"h": "Как не звучать по-русски",
+"t": "Не переводите дословно. Русское «давай» чаще всего <b>hajde</b> или <b>ajde</b>. «Пожалуйста» — это <b>molim</b> и <b>izvolite</b>, а «пожалуйста» при ответе на спасибо — <b>nema na čemu</b>."
+}
+],
+"w": [
+[
+"nema problema",
+"без проблем"
+],
+[
+"u redu",
+"в порядке"
+],
+[
+"ma daj",
+"да ну"
+],
+[
+"nema šanse",
+"ни за что"
+],
+[
+"kako ide",
+"как дела"
+],
+[
+"šta ima",
+"что нового"
+],
+[
+"živeli",
+"за здоровье"
+],
+[
+"prijatno",
+"приятного аппетита"
+],
+[
+"srećan put",
+"счастливого пути"
+],
+[
+"dobro došli",
+"добро пожаловать"
+],
+[
+"polako",
+"потихоньку"
+],
+[
+"slobodno",
+"не стесняйтесь"
+]
+],
+"d": [
+[
+"Ćao! Šta ima? Kako ide?",
+"Привет! Что нового? Как дела?"
+],
+[
+"Sve u redu, polako. A ti?",
+"Всё в порядке, потихоньку. А ты?"
+],
+[
+"Nema problema, stižem za deset minuta.",
+"Без проблем, буду через десять минут."
+],
+[
+"Ma daj, ne mogu da verujem!",
+"Да ну, не могу поверить!"
+],
+[
+"Živeli! Na zdravlje!",
+"За здоровье! На здоровье!"
+],
+[
+"Prijatno! Srećan put!",
+"Приятного аппетита! Счастливого пути!"
+]
+],
+"x": [
+[
+"Перед едой говорят:",
+[
+"Prijatno",
+"Živeli",
+"Srećan put",
+"Dobro došli"
+],
+0,
+"Prijatno — приятного аппетита."
+],
+[
+"Когда чокаются, говорят:",
+[
+"Živeli",
+"Prijatno",
+"Hvala",
+"Izvinite"
+],
+0,
+"Živeli — за здоровье."
+],
+[
+"Провожая в дорогу, говорят:",
+[
+"Srećan put",
+"Dobro došli",
+"Laku noć",
+"Prijatno"
+],
+0,
+"Srećan put — счастливого пути."
+],
+[
+"Встречая гостей, говорят:",
+[
+"Dobro došli",
+"Srećan put",
+"Živeli",
+"Nema problema"
+],
+0,
+"Dobro došli — добро пожаловать."
+],
+[
+"«Без проблем» по-сербски:",
+[
+"Nema problema",
+"Ne znam",
+"Nemam problem",
+"Nema šanse"
+],
+0,
+"Nema problema — без проблем."
+],
+[
+"«Ни за что» по-сербски:",
+[
+"Nema šanse",
+"Nema problema",
+"U redu",
+"Polako"
+],
+0,
+"Nema šanse — нет шансов."
+],
+[
+"Неформальное «как дела»:",
+[
+"Kako ide?",
+"Šta ide?",
+"Gde ide?",
+"Zašto ide?"
+],
+0,
+"Kako ide? — как дела?"
+]
+]
+},
+{
+"id": "b2-05",
+"lvl": "B2",
+"n": 5,
+"title": "Деловая и официальная речь",
+"g": [
+{
+"h": "Обращение и вежливость",
+"t": "В деловом общении используется <b>Vi</b> (в письмах часто с большой буквы: <b>Vi, Vas, Vama</b>). Начало письма: <b>Poštovani gospodine Petroviću</b> или <b>Poštovana gospođo Jović</b>. Окончание: <b>Srdačan pozdrav</b> или <b>S poštovanjem</b>."
+},
+{
+"h": "Типовые обороты",
+"t": "<b>Javljam se u vezi sa…</b> — пишу вам по поводу… <b>U prilogu Vam šaljem…</b> — в приложении отправляю… <b>Molim Vas da…</b> — прошу вас… <b>Hvala na brzom odgovoru</b> — спасибо за быстрый ответ. <b>Stojim Vam na raspolaganju</b> — к вашим услугам."
+},
+{
+"h": "Встречи и документы",
+"t": "<b>sastanak</b> встреча, <b>ugovor</b> договор, <b>ponuda</b> предложение, <b>rok</b> срок, <b>potpis</b> подпись, <b>zakazati</b> назначить, <b>dogovor</b> договорённость. <b>Možemo li zakazati sastanak za utorak?</b>"
+},
+{
+"h": "Вежливые формулы",
+"t": "Вместо прямой просьбы используйте условное наклонение: <b>Biste li mogli da…?</b> <b>Voleo bih da…</b> Это звучит мягче и вежливее, чем <b>Hoću…</b>."
+}
+],
+"w": [
+[
+"sastanak",
+"встреча"
+],
+[
+"ugovor",
+"договор"
+],
+[
+"rok",
+"срок"
+],
+[
+"ponuda",
+"предложение"
+],
+[
+"potpis",
+"подпись"
+],
+[
+"u prilogu",
+"в приложении"
+],
+[
+"u vezi sa",
+"в связи с, по поводу"
+],
+[
+"poštovani",
+"уважаемый"
+],
+[
+"srdačan pozdrav",
+"с уважением"
+],
+[
+"na raspolaganju",
+"к вашим услугам"
+],
+[
+"dogovor",
+"договорённость"
+],
+[
+"zakazati",
+"назначить"
+]
+],
+"d": [
+[
+"Poštovani gospodine Petroviću, javljam se u vezi sa ugovorom.",
+"Уважаемый господин Петрович, пишу вам по поводу договора."
+],
+[
+"U prilogu Vam šaljem ponudu.",
+"В приложении отправляю вам предложение."
+],
+[
+"Možemo li zakazati sastanak za utorak?",
+"Можем ли назначить встречу на вторник?"
+],
+[
+"Rok je petnaesti decembar.",
+"Срок — пятнадцатое декабря."
+],
+[
+"Hvala na brzom odgovoru.",
+"Спасибо за быстрый ответ."
+],
+[
+"Srdačan pozdrav, Ana Jović.",
+"С уважением, Ана Йович."
+]
+],
+"x": [
+[
+"Начало делового письма:",
+[
+"Poštovani",
+"Zdravo",
+"Ćao",
+"Hej"
+],
+0,
+"Poštovani — уважаемый."
+],
+[
+"Конец делового письма:",
+[
+"Srdačan pozdrav",
+"Doviđenja",
+"Laku noć",
+"Ćao"
+],
+0,
+"Srdačan pozdrav — с уважением."
+],
+[
+"«В приложении» по-сербски:",
+[
+"u prilogu",
+"u vezi sa",
+"na raspolaganju",
+"rok"
+],
+0,
+"U prilogu — в приложении."
+],
+[
+"«По поводу, в связи с»:",
+[
+"u vezi sa",
+"u prilogu",
+"rok",
+"ponuda"
+],
+0,
+"U vezi sa — по поводу."
+],
+[
+"Možemo li ___ sastanak? (назначить)",
+[
+"zakazati",
+"zakazivati",
+"zakazao",
+"zakazan"
+],
+0,
+"После možemo li нужен инфинитив: zakazati."
+],
+[
+"Potpisujem ___. (договор)",
+[
+"ugovor",
+"ugovora",
+"ugovoru",
+"ugovorom"
+],
+0,
+"Винительный падеж неодушевлённого м.р.: ugovor."
+],
+[
+"Hvala ___ odgovoru.",
+[
+"na",
+"za",
+"u",
+"o"
+],
+0,
+"Hvala na odgovoru."
+]
+]
+},
+{
+"id": "b2-06",
+"lvl": "B2",
+"n": 6,
+"title": "Новости и публицистика",
+"g": [
+{
+"h": "Лексика новостей",
+"t": "<b>vlada</b> правительство, <b>predsednik</b> президент, <b>izbori</b> выборы, <b>zakon</b> закон, <b>cena</b> цена, <b>inflacija</b> инфляция, <b>plata</b> зарплата, <b>penzija</b> пенсия, <b>vest</b> новость, <b>izveštaj</b> отчёт."
+},
+{
+"h": "Передача чужих слов",
+"t": "<b>Vlada je saopštila da…</b> — правительство сообщило, что… <b>Predsednik je najavio…</b> — президент объявил… <b>Prema izveštaju…</b> — согласно отчёту… <b>Navodno…</b> — якобы. <b>Kako se navodi…</b> — как сообщается… Глагол в придаточном ставится в будущем или прошедшем времени, как в прямой речи."
+},
+{
+"h": "Цифры и динамика",
+"t": "<b>porasti</b> вырасти, <b>pasti</b> упасть, <b>povećati</b> увеличить, <b>smanjiti</b> уменьшить, <b>iznositi</b> составлять: <b>Inflacija iznosi pet odsto</b>. Процент по-сербски — <b>odsto</b> или <b>procenat</b>."
+},
+{
+"h": "Страдательное причастие",
+"t": "В новостях часто встречаются конструкции <b>Zakon je izglasan</b>, <b>Odluka je doneta</b>, <b>Cene su povećane</b>. Они образуются с <b>je/su</b> и причастием, согласованным с подлежащим."
+}
+],
+"w": [
+[
+"vlada",
+"правительство"
+],
+[
+"predsednik",
+"президент"
+],
+[
+"izbori",
+"выборы"
+],
+[
+"zakon",
+"закон"
+],
+[
+"cena",
+"цена"
+],
+[
+"inflacija",
+"инфляция"
+],
+[
+"plata",
+"зарплата"
+],
+[
+"penzija",
+"пенсия"
+],
+[
+"vest",
+"новость"
+],
+[
+"izveštaj",
+"отчёт"
+],
+[
+"navodno",
+"якобы"
+],
+[
+"saopštiti",
+"сообщить"
+]
+],
+"d": [
+[
+"Šta ima novo u vestima?",
+"Что нового в новостях?"
+],
+[
+"Vlada je saopštila da će cene hleba porasti.",
+"Правительство сообщило, что цены на хлеб вырастут."
+],
+[
+"Prema izveštaju, inflacija je pala.",
+"Согласно отчёту, инфляция снизилась."
+],
+[
+"Predsednik je najavio nove mere.",
+"Президент объявил о новых мерах."
+],
+[
+"Navodno će izbori biti u proleće.",
+"Якобы выборы будут весной."
+],
+[
+"Zakon je izglasan prošle nedelje.",
+"Закон принят на прошлой неделе."
+]
+],
+"x": [
+[
+"Vlada je ___ da će cene porasti. (сообщила)",
+[
+"saopštila",
+"saopštio",
+"saopštilo",
+"saopštena"
+],
+0,
+"Vlada — женский род: saopštila."
+],
+[
+"Prema ___, inflacija je pala. (отчёту)",
+[
+"izveštaju",
+"izveštaj",
+"izveštaja",
+"izveštajem"
+],
+0,
+"Prema + дательный падеж: izveštaju."
+],
+[
+"___ će izbori biti u proleće. (якобы)",
+[
+"Navodno",
+"Naravno",
+"Sigurno",
+"Odmah"
+],
+0,
+"Navodno — якобы."
+],
+[
+"Predsednik je ___ nove mere. (объявил)",
+[
+"najavio",
+"najavila",
+"najavilo",
+"najavljen"
+],
+0,
+"Predsednik — мужской род: najavio."
+],
+[
+"Zakon je ___ prošle nedelje. (принят)",
+[
+"izglasan",
+"izglasao",
+"izglasana",
+"izglasano"
+],
+0,
+"Zakon — мужской род: izglasan."
+],
+[
+"Cene su ___. (выросли)",
+[
+"porasle",
+"porastao",
+"porasla",
+"porasti"
+],
+0,
+"Cene — женский род мн. числа: porasle."
+],
+[
+"Plata je ___. (повышена)",
+[
+"povećana",
+"povećan",
+"povećano",
+"povećala"
+],
+0,
+"Plata — женский род: povećana."
+]
+]
 }
 ]
 }
