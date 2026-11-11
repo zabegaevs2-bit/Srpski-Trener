@@ -3926,6 +3926,1446 @@
 "Iz Beograda — из Белграда."
 ]
 ]
+},
+{
+"id": "b1-01",
+"lvl": "B1",
+"n": 1,
+"title": "Повелительное наклонение",
+"g": [
+{
+"h": "Как образуется",
+"t": "Возьмите форму 3-го лица множественного числа настоящего времени и отбросите окончание. Если осталось <b>-aj</b>, то оставьте: <b>čitaju → čitaj</b>. Если <b>-e</b> или <b>-u</b>, то замените на <b>-i</b>: <b>govore → govori</b>, <b>pišu → piši</b>."
+},
+{
+"h": "Мы и вы",
+"t": "Для «вы» (и вежливого «ты») добавляется <b>-te</b>: <b>čitajte, govorite, pišite</b>. Для «давайте» добавляется <b>-mo</b>: <b>čitajmo, govorimo, pišimo</b>. Слово <b>hajde</b> (давай) тоже часто используется: <b>Hajde da idemo</b>."
+},
+{
+"h": "Неправильные формы",
+"t": "<b>biti</b> → <b>budi, budite</b>. <b>ići</b> → <b>idi, idite</b>. <b>doći</b> → <b>dođi, dođite</b>. <b>reći</b> → <b>reci, recite</b>. <b>jesti</b> → <b>jedi, jedite</b>. <b>piti</b> → <b>pij, pijte</b>. <b>dati</b> → <b>daj, dajte</b>. <b>stati</b> → <b>stani, stanite</b>."
+},
+{
+"h": "Запрет",
+"t": "Запрет образуется двумя способами. Первый: <b>ne</b> + повелительное несовершенного вида: <b>Ne kasni!</b> Второй, более мягкий: <b>nemoj</b> + <b>da</b> + настоящее время: <b>Nemoj da kasniš!</b>"
+}
+],
+"w": [
+[
+"slušaj",
+"слушай"
+],
+[
+"gledaj",
+"смотри"
+],
+[
+"čekaj",
+"жди"
+],
+[
+"reci",
+"скажи"
+],
+[
+"pogledaj",
+"посмотри"
+],
+[
+"uzmi",
+"возьми"
+],
+[
+"daj",
+"дай"
+],
+[
+"dođi",
+"приди"
+],
+[
+"stani",
+"остановись"
+],
+[
+"požuri",
+"поторопись"
+],
+[
+"nemoj",
+"не надо"
+],
+[
+"ne brini",
+"не волнуйся"
+]
+],
+"d": [
+[
+"Dođi ovamo, molim te.",
+"Подойди сюда, пожалуйста."
+],
+[
+"Čekaj malo, odmah dolazim.",
+"Подожди немного, сейчас приду."
+],
+[
+"Reci mi šta se desilo.",
+"Скажи мне, что случилось."
+],
+[
+"Nemoj da kasniš.",
+"Не опаздывай."
+],
+[
+"Uzmite ovo i pogledajte.",
+"Возьмите это и посмотрите."
+],
+[
+"Ne brini, sve je u redu.",
+"Не волнуйся, всё в порядке."
+]
+],
+"x": [
+[
+"___ mi šta se desilo! (reći)",
+[
+"Reci",
+"Rekao",
+"Rećiš",
+"Reče"
+],
+0,
+"Reći → reci (неправильная форма)."
+],
+[
+"___ ovamo! (doći)",
+[
+"Dođi",
+"Dolaziš",
+"Došao",
+"Doći"
+],
+0,
+"Doći → dođi."
+],
+[
+"___ mi knjigu! (dati)",
+[
+"Daj",
+"Dam",
+"Dajem",
+"Dao"
+],
+0,
+"Dati → daj."
+],
+[
+"___, molim vas. (čekati, вы)",
+[
+"Čekajte",
+"Čekaj",
+"Čekate",
+"Čekajmo"
+],
+0,
+"Для «вы» добавляется -te: čekajte."
+],
+[
+"Ne ___! (kasniti)",
+[
+"kasni",
+"kasnio",
+"kasniš",
+"kasniti"
+],
+0,
+"Kasniti → kasni."
+],
+[
+"Nemoj ___ kasniš.",
+[
+"da",
+"ti",
+"se",
+"će"
+],
+0,
+"Nemoj da + настоящее время."
+],
+[
+"___ ovo zajedno! (давайте посмотрим)",
+[
+"Pogledajmo",
+"Pogledajte",
+"Pogledaj",
+"Gledamo"
+],
+0,
+"Для «давайте» добавляется -mo."
+]
+]
+},
+{
+"id": "b1-02",
+"lvl": "B1",
+"n": 2,
+"title": "Условное наклонение",
+"g": [
+{
+"h": "Условное I",
+"t": "Строится из краткой формы <b>biti</b>: <b>bih, bi, bi, bismo, biste, bi</b> и причастия на <b>-l</b>: <b>Ja bih radio</b>, <b>ti bi radio</b>, <b>mi bismo radili</b>. Эти формы безударные и стоят на втором месте: <b>Hteo bih kafu</b>."
+},
+{
+"h": "Вежливая просьба",
+"t": "Условное наклонение звучит мягче повелительного: <b>Hteo bih kafu.</b> <b>Voleo bih da vidim.</b> <b>Biste li mogli da ponovite?</b> — не могли бы вы повторить?"
+},
+{
+"h": "Нереальное условие",
+"t": "Для нереального условия используется <b>da</b> в условии и условное наклонение в главной части: <b>Da imam vremena, otišao bih.</b> — если бы у меня было время, я бы пошёл. <b>Da sam znao, ne bih došao.</b> — если бы я знал, я бы не пришёл."
+},
+{
+"h": "Реальное условие",
+"t": "Если условие возможно, говорят <b>ako</b> + настоящее время, а в главной части будущее время: <b>Ako imam vremena, doći ću.</b>"
+}
+],
+"w": [
+[
+"voleo bih",
+"я хотел бы"
+],
+[
+"hteo bih",
+"я хотел бы"
+],
+[
+"želeo bih",
+"я желал бы"
+],
+[
+"mogao bih",
+"я мог бы"
+],
+[
+"trebalo bi",
+"следовало бы"
+],
+[
+"bilo bi lepo",
+"было бы хорошо"
+],
+[
+"ako",
+"если (реально)"
+],
+[
+"da",
+"если бы"
+],
+[
+"rado",
+"охотно"
+],
+[
+"možda",
+"может быть"
+],
+[
+"kad bih",
+"если бы я"
+],
+[
+"naravno",
+"конечно"
+]
+],
+"d": [
+[
+"Hteo bih kafu, molim vas.",
+"Я бы хотел кофе, пожалуйста."
+],
+[
+"Biste li mogli da ponovite?",
+"Не могли бы вы повторить?"
+],
+[
+"Da imam vremena, otišao bih na more.",
+"Если бы у меня было время, я бы поехал на море."
+],
+[
+"Šta bi radio da imaš više novca?",
+"Что бы ты делал, если бы у тебя было больше денег?"
+],
+[
+"Kupio bih kuću.",
+"Я бы купил дом."
+],
+[
+"Bilo bi lepo da dođeš.",
+"Было бы хорошо, если бы ты пришёл."
+]
+],
+"x": [
+[
+"Ja ___ radio.",
+[
+"bih",
+"bi",
+"bismo",
+"biste"
+],
+0,
+"С ja используется bih."
+],
+[
+"Mi ___ otišli.",
+[
+"bismo",
+"bih",
+"bi",
+"biste"
+],
+0,
+"С mi используется bismo."
+],
+[
+"___ li mogli da pomognete?",
+[
+"Biste",
+"Bismo",
+"Bih",
+"Bi"
+],
+0,
+"С vi используется biste."
+],
+[
+"Da imam novca, ___ auto. (kupiti)",
+[
+"kupio bih",
+"kupim",
+"kupiću",
+"kupio sam"
+],
+0,
+"Нереальное условие: условное наклонение."
+],
+[
+"Hteo ___ kafu.",
+[
+"bih",
+"bi",
+"sam",
+"ću"
+],
+0,
+"Hteo bih — я бы хотел."
+],
+[
+"Ona ___ došla. (если бы...)",
+[
+"bi",
+"bih",
+"bismo",
+"biste"
+],
+0,
+"С ona используется bi."
+],
+[
+"Bilo ___ lepo.",
+[
+"bi",
+"bih",
+"je",
+"će"
+],
+0,
+"Bilo bi lepo — было бы хорошо."
+]
+]
+},
+{
+"id": "b1-03",
+"lvl": "B1",
+"n": 3,
+"title": "Придаточные предложения",
+"g": [
+{
+"h": "Что, чтобы",
+"t": "<b>Da</b> вводит придаточное с глаголами мысли и речи: <b>Mislim da će kiša</b>, <b>Znam da nemaš vremena</b>, <b>Kažem da je to tačno</b>. Также <b>da</b> заменяет инфинитив: <b>Hoću da pišem</b>, <b>Moram da radim</b>."
+},
+{
+"h": "Что (после чувств)",
+"t": "После глаголов чувства используется <b>što</b>: <b>Drago mi je što si došao</b>, <b>Žao mi je što kasnim</b>."
+},
+{
+"h": "Потому что, если, хотя",
+"t": "<b>jer</b> и <b>zato što</b> — потому что. <b>ako</b> — если (реальное условие). <b>iako</b> — хотя: <b>Iako je kasno, radim</b>. <b>dok</b> — пока. <b>čim</b> — как только: <b>Pozovi me čim stigneš</b>. <b>pre nego što</b> — прежде чем. <b>kad / kada</b> — когда."
+},
+{
+"h": "Который",
+"t": "<b>koji, koja, koje</b> согласуется с существительным по роду и числу, а падеж зависит от роли в придаточном: <b>čovek koji živi ovde</b>, <b>žena koju vidim</b>."
+}
+],
+"w": [
+[
+"da",
+"что, чтобы"
+],
+[
+"što",
+"что (после эмоций)"
+],
+[
+"jer",
+"потому что"
+],
+[
+"zato što",
+"потому что"
+],
+[
+"kad",
+"когда"
+],
+[
+"ako",
+"если"
+],
+[
+"iako",
+"хотя"
+],
+[
+"dok",
+"пока"
+],
+[
+"čim",
+"как только"
+],
+[
+"pre nego što",
+"прежде чем"
+],
+[
+"koji",
+"который"
+],
+[
+"mislim da",
+"думаю, что"
+]
+],
+"d": [
+[
+"Mislim da će sutra padati kiša.",
+"Думаю, что завтра будет дождь."
+],
+[
+"Ako pada kiša, ostaćemo kod kuće.",
+"Если пойдёт дождь, останемся дома."
+],
+[
+"Drago mi je što si došao.",
+"Рад, что ты пришёл."
+],
+[
+"Pozovi me čim stigneš.",
+"Позвони мне, как только приедешь."
+],
+[
+"Iako je kasno, još radim.",
+"Хотя уже поздно, я ещё работаю."
+],
+[
+"Znam da nemaš vremena.",
+"Знаю, что у тебя нет времени."
+]
+],
+"x": [
+[
+"Mislim ___ će doći.",
+[
+"da",
+"što",
+"jer",
+"ako"
+],
+0,
+"После mislim используется da."
+],
+[
+"Drago mi je ___ si ovde.",
+[
+"što",
+"ako",
+"dok",
+"čim"
+],
+0,
+"После чувства используется što."
+],
+[
+"Pozovi me ___ stigneš.",
+[
+"čim",
+"iako",
+"ako",
+"dok"
+],
+0,
+"Čim — как только."
+],
+[
+"___ je kasno, radim.",
+[
+"Iako",
+"Ako",
+"Jer",
+"Dok"
+],
+0,
+"Iako — хотя."
+],
+[
+"Ne mogu, ___ radim.",
+[
+"jer",
+"iako",
+"ako",
+"čim"
+],
+0,
+"Jer — потому что."
+],
+[
+"Radim ___ ti spavaš.",
+[
+"dok",
+"jer",
+"ako",
+"što"
+],
+0,
+"Dok — пока."
+],
+[
+"Znam ___ nemaš vremena.",
+[
+"da",
+"što",
+"iako",
+"čim"
+],
+0,
+"Znam da — знаю, что."
+]
+]
+},
+{
+"id": "b1-04",
+"lvl": "B1",
+"n": 4,
+"title": "Падежи во множественном числе",
+"g": [
+{
+"h": "Таблица окончаний",
+"t": "Мужской род: Nom <b>-i</b>, Gen <b>-a</b>, Dat <b>-ima</b>, Akk <b>-e</b>, Ins <b>-ima</b>, Lok <b>-ima</b>. Женский род: Nom <b>-e</b>, Gen <b>-a</b>, Dat <b>-ama</b>, Akk <b>-e</b>, Ins <b>-ama</b>, Lok <b>-ama</b>. Средний род: Nom <b>-a</b>, Gen <b>-a</b>, Dat <b>-ima</b>, Akk <b>-a</b>, Ins <b>-ima</b>, Lok <b>-ima</b>."
+},
+{
+"h": "Три окончания для всех",
+"t": "Дательный, творительный и предложный совпадают: <b>-ima</b> (м., ср.) или <b>-ama</b> (ж.). <b>Sa prijateljima, o prijateljima, prijateljima</b>."
+},
+{
+"h": "Родительный множественного",
+"t": "Окончание <b>-a</b> для всех родов: <b>mnogo prijatelja, pet knjiga, deset godina</b>. Иногда вставляется беглое <b>a</b>: <b>devojka → devojaka</b>, <b>sestra → sestara</b>."
+},
+{
+"h": "Особые слова",
+"t": "<b>ljudi</b>: Gen <b>ljudi</b>, Dat <b>ljudima</b>, Akk <b>ljude</b>. <b>deca</b>: Gen <b>dece</b>, Dat <b>deci</b>, Akk <b>decu</b>, Ins <b>decom</b>. <b>braća</b>: <b>braće, braći, braću, braćom</b>."
+}
+],
+"w": [
+[
+"sa prijateljima",
+"с друзьями"
+],
+[
+"o knjigama",
+"о книгах"
+],
+[
+"mnogo ljudi",
+"много людей"
+],
+[
+"sa decom",
+"с детьми"
+],
+[
+"bez ljudi",
+"без людей"
+],
+[
+"među ljudima",
+"среди людей"
+],
+[
+"o gradovima",
+"о городах"
+],
+[
+"kod prijatelja",
+"у друзей"
+],
+[
+"ženama",
+"женщинам"
+],
+[
+"studentima",
+"студентам"
+],
+[
+"gradove",
+"города (вин.)"
+],
+[
+"roditelji",
+"родители"
+]
+],
+"d": [
+[
+"Sa kim živiš?",
+"С кем ты живёшь?"
+],
+[
+"Živim sa roditeljima.",
+"Живу с родителями."
+],
+[
+"Imaš li mnogo prijatelja?",
+"У тебя много друзей?"
+],
+[
+"Imam, i često idem kod njih.",
+"Да, и часто хожу к ним."
+],
+[
+"Ne volim velike gradove.",
+"Не люблю большие города."
+],
+[
+"Razgovaramo o knjigama i filmovima.",
+"Говорим о книгах и фильмах."
+]
+],
+"x": [
+[
+"Razgovaram sa ___. (prijatelji)",
+[
+"prijateljima",
+"prijatelja",
+"prijatelje",
+"prijatelji"
+],
+0,
+"sa + творительный множественного: prijateljima."
+],
+[
+"Čitam o ___. (knjige)",
+[
+"knjigama",
+"knjige",
+"knjiga",
+"knjigu"
+],
+0,
+"o + предложный множественного ж.р.: knjigama."
+],
+[
+"Volim ___. (gradovi)",
+[
+"gradove",
+"gradovi",
+"gradova",
+"gradovima"
+],
+0,
+"Винительный множественного м.р.: gradove."
+],
+[
+"Nema ___. (studenti)",
+[
+"studenata",
+"studente",
+"studentima",
+"studenti"
+],
+0,
+"Nema + родительный множественного: studenata."
+],
+[
+"Dajem poklon ___. (deca)",
+[
+"deci",
+"decu",
+"decom",
+"dece"
+],
+0,
+"Дательный от deca: deci."
+],
+[
+"Idem kod ___. (prijatelji)",
+[
+"prijatelja",
+"prijateljima",
+"prijatelje",
+"prijatelji"
+],
+0,
+"kod + родительный множественного: prijatelja."
+],
+[
+"Vidim ove ___. (žene)",
+[
+"žene",
+"žena",
+"ženama",
+"ženi"
+],
+0,
+"Винительный множественного ж.р.: žene."
+]
+]
+},
+{
+"id": "b1-05",
+"lvl": "B1",
+"n": 5,
+"title": "Вид глагола",
+"g": [
+{
+"h": "Две формы одного глагола",
+"t": "Большинство глаголов имеет пару. <b>Несовершенный вид</b> показывает процесс или повторение: <b>pisati, čitati, kupovati, davati</b>. <b>Совершенный вид</b> показывает завершённый результат: <b>napisati, pročitati, kupiti, dati</b>."
+},
+{
+"h": "Прошедшее время",
+"t": "<b>Juče sam pisao pismo</b> — я писал письмо (процесс). <b>Napisao sam pismo</b> — я написал письмо (результат). На вопрос «ты уже…?» отвечайте совершенным видом: <b>Jesi li već pročitao knjigu?</b>"
+},
+{
+"h": "Будущее время",
+"t": "Будущее можно образовать от обоих видов: <b>Sutra ću pisati</b> (буду заниматься) и <b>Sutra ću napisati</b> (закончу). После <b>kad, ako, čim</b> нужен совершенный вид в настоящем времени, но оно относится к будущему: <b>Kad završim, javiću ti.</b>"
+},
+{
+"h": "Настоящее время",
+"t": "Настоящее время совершенного вида не описывает то, что происходит сейчас. Поэтому <b>Pišem pismo</b> — пишу сейчас, а <b>Napišem pismo</b> — только после слов вроде <b>da, kad, ako</b>."
+},
+{
+"h": "Повторение",
+"t": "Для привычных и повторяющихся действий используйте несовершенный: <b>Svaki dan kupujem hleb</b>, <b>Obično ustajem u sedam</b>."
+}
+],
+"w": [
+[
+"pisati",
+"писать"
+],
+[
+"napisati",
+"написать"
+],
+[
+"čitati",
+"читать"
+],
+[
+"pročitati",
+"прочитать"
+],
+[
+"kupovati",
+"покупать"
+],
+[
+"kupiti",
+"купить"
+],
+[
+"davati",
+"давать"
+],
+[
+"dati",
+"дать"
+],
+[
+"završavati",
+"заканчивать"
+],
+[
+"završiti",
+"закончить"
+],
+[
+"otvarati",
+"открывать"
+],
+[
+"otvoriti",
+"открыть"
+]
+],
+"d": [
+[
+"Šta radiš?",
+"Что делаешь?"
+],
+[
+"Pišem pismo.",
+"Пишу письмо."
+],
+[
+"Jesi li ga već napisao?",
+"Ты его уже написал?"
+],
+[
+"Jesam, napisao sam ga juče.",
+"Да, написал вчера."
+],
+[
+"Kad završiš, pošalji mi ga.",
+"Когда закончишь, пришли мне его."
+],
+[
+"Poslaću ti ga večeras.",
+"Пришлю тебе его сегодня вечером."
+]
+],
+"x": [
+[
+"Juče sam ceo dan ___ knjigu. (процесс)",
+[
+"čitao",
+"pročitao",
+"pročitaću",
+"čitam"
+],
+0,
+"Ceo dan — процесс: несовершенный вид, čitao."
+],
+[
+"Jesi li već ___ knjigu? (результат)",
+[
+"pročitao",
+"čitao",
+"čitaš",
+"čitati"
+],
+0,
+"«Уже» + результат: pročitao."
+],
+[
+"Kad ___ posao, javiću ti. (закончу)",
+[
+"završim",
+"završavam",
+"završio",
+"završavaš"
+],
+0,
+"После kad нужен совершенный вид: završim."
+],
+[
+"Svaki dan ___ kafu. (привычка)",
+[
+"kupujem",
+"kupim",
+"kupio",
+"kupiću"
+],
+0,
+"Привычка: несовершенный вид kupujem."
+],
+[
+"Sutra ću ___ hleb. (куплю)",
+[
+"kupiti",
+"kupovati",
+"kupujem",
+"kupio"
+],
+0,
+"Конкретная покупка: совершенный вид kupiti."
+],
+[
+"Ona ___ pismo već sat vremena. (пишет)",
+[
+"piše",
+"napiše",
+"napisala",
+"napisaće"
+],
+0,
+"Процесс сейчас: несовершенный вид piše."
+],
+[
+"___ mi knjigu! (дай сейчас)",
+[
+"Daj",
+"Dati",
+"Dao",
+"Dam"
+],
+0,
+"Повелительное: daj."
+]
+]
+},
+{
+"id": "b1-06",
+"lvl": "B1",
+"n": 6,
+"title": "Приставочные глаголы",
+"g": [
+{
+"h": "Приставка меняет смысл",
+"t": "Приставка добавляется к простому глаголу и меняет значение и вид. От <b>ići</b> (идти): <b>doći</b> (прийти), <b>otići</b> (уйти), <b>ući</b> (войти), <b>izaći</b> (выйти), <b>proći</b> (пройти), <b>preći</b> (перейти), <b>prići</b> (подойти), <b>poći</b> (отправиться)."
+},
+{
+"h": "Основные приставки",
+"t": "<b>do-</b> достичь: <b>doći, doneti</b>. <b>od-</b> прочь: <b>otići, odneti</b>. <b>u-</b> внутрь: <b>ući, uneti, upisati</b>. <b>iz-</b> наружу: <b>izaći, izneti</b>. <b>pre-</b> через или заново: <b>preći, prepisati</b>. <b>na-</b> нанести: <b>napisati</b>. <b>o-</b> вокруг: <b>opisati</b>."
+},
+{
+"h": "Совершенный вид",
+"t": "Приставочные глаголы обычно совершенного вида. Их пара несовершенного вида образуется суффиксом: <b>doći → dolaziti</b>, <b>otići → odlaziti</b>, <b>napisati → pisati</b>."
+},
+{
+"h": "Следите за значением",
+"t": "Не переносите русскую логику: <b>doći</b> значит «прийти или приехать», <b>otići</b> значит «уйти, уехать», <b>ući</b> — «войти». Русское «пойти» часто переводится как <b>otići</b> или <b>poći</b>."
+}
+],
+"w": [
+[
+"doći",
+"прийти"
+],
+[
+"otići",
+"уйти"
+],
+[
+"ući",
+"войти"
+],
+[
+"izaći",
+"выйти"
+],
+[
+"proći",
+"пройти"
+],
+[
+"preći",
+"перейти"
+],
+[
+"doneti",
+"принести"
+],
+[
+"odneti",
+"унести"
+],
+[
+"napisati",
+"написать"
+],
+[
+"upisati",
+"записать"
+],
+[
+"prepisati",
+"переписать"
+],
+[
+"opisati",
+"описать"
+]
+],
+"d": [
+[
+"Kada ćeš doći?",
+"Когда ты придёшь?"
+],
+[
+"Doći ću u pet, pa ćemo zajedno ući.",
+"Приду в пять, потом мы вместе войдём."
+],
+[
+"Moram da odem do banke.",
+"Мне нужно сходить в банк."
+],
+[
+"Možeš li mi doneti vodu?",
+"Можешь принести мне воду?"
+],
+[
+"Doneću ti je odmah.",
+"Сейчас принесу её тебе."
+],
+[
+"Izašao je pre pet minuta.",
+"Он вышел пять минут назад."
+]
+],
+"x": [
+[
+"Kad ___ kući, javi mi se. (придёшь)",
+[
+"dođeš",
+"dolaziš",
+"odeš",
+"ideš"
+],
+0,
+"После kad нужен совершенный вид: dođeš."
+],
+[
+"On je ___ iz sobe. (вышел)",
+[
+"izašao",
+"ušao",
+"prošao",
+"otišao"
+],
+0,
+"Iz- — наружу: izašao."
+],
+[
+"Ona je ___ u sobu. (вошла)",
+[
+"ušla",
+"izašla",
+"došla",
+"otišla"
+],
+0,
+"U- — внутрь: ušla."
+],
+[
+"Ne mogu da ___ ovo. (написать)",
+[
+"napišem",
+"pišem",
+"pišeš",
+"pišu"
+],
+0,
+"Результат: napišem."
+],
+[
+"Moram da ___ ovo pismo. (переписать)",
+[
+"prepišem",
+"opišem",
+"upišem",
+"zapišem"
+],
+0,
+"Pre- — заново: prepišem."
+],
+[
+"___ ti vodu. (принесу сюда)",
+[
+"Doneću",
+"Odneću",
+"Uneću",
+"Izneću"
+],
+0,
+"Do- — сюда: doneću."
+],
+[
+"On je ___. (ушёл прочь)",
+[
+"otišao",
+"došao",
+"ušao",
+"izašao"
+],
+0,
+"Od- — прочь: otišao."
+]
+]
+},
+{
+"id": "b1-07",
+"lvl": "B1",
+"n": 7,
+"title": "Числительные и существительные",
+"g": [
+{
+"h": "Один, два, три, четыре по родам",
+"t": "<b>jedan, jedna, jedno</b>; <b>dva, dve, dva</b>; <b>tri</b>; <b>četiri</b>. Для женского рода «два» это <b>dve</b>: <b>dve sestre</b>. Для мужского и среднего <b>dva</b>: <b>dva brata, dva sela</b>."
+},
+{
+"h": "Составные числа",
+"t": "После «двадцать один» и подобных существительное стоит в единственном числе: <b>dvadeset jedan dan</b>, <b>trideset jedna godina</b>. После «двадцать два, три, четыре»: <b>dvadeset dva dana</b>, <b>dvadeset tri godine</b>."
+},
+{
+"h": "Собирательные числительные",
+"t": "Для детей, смешанных групп и вещей во множественном числе: <b>dvoje, troje, četvoro, petoro</b>. <b>Imam dvoje dece.</b> <b>Troje ljudi</b> — трое людей. После них существительное стоит в родительном падеже."
+},
+{
+"h": "Оба, обе",
+"t": "<b>oba</b> (м., ср.) и <b>obe</b> (ж.) всегда согласуются с родом: <b>oba brata, obe sestre</b>. В русском говорят «оба» только для двух."
+},
+{
+"h": "Порядковые числительные",
+"t": "<b>prvi, drugi, treći, četvrti, peti, šesti, sedmi, osmi, deveti, deseti</b>. Они согласуются как прилагательные: <b>prva godina, treće mesto</b>."
+}
+],
+"w": [
+[
+"oba",
+"оба"
+],
+[
+"obe",
+"обе"
+],
+[
+"dvoje",
+"двое"
+],
+[
+"troje",
+"трое"
+],
+[
+"četvoro",
+"четверо"
+],
+[
+"prvi",
+"первый"
+],
+[
+"drugi",
+"второй"
+],
+[
+"treći",
+"третий"
+],
+[
+"peti",
+"пятый"
+],
+[
+"deseti",
+"десятый"
+],
+[
+"polovina",
+"половина"
+],
+[
+"ceo",
+"целый"
+]
+],
+"d": [
+[
+"Koliko imaš dece?",
+"Сколько у тебя детей?"
+],
+[
+"Imam dvoje dece.",
+"У меня двое детей."
+],
+[
+"A koliko godina imaju?",
+"А сколько им лет?"
+],
+[
+"Jedno ima pet godina, a drugo osam.",
+"Одному пять лет, а другому восемь."
+],
+[
+"Obe sestre žive u Novom Sadu.",
+"Обе сестры живут в Нови-Саде."
+],
+[
+"Ovo je treći put da dolazim.",
+"Я прихожу сюда в третий раз."
+]
+],
+"x": [
+[
+"Imam ___ brata. (2)",
+[
+"dva",
+"dve",
+"dvoje",
+"dvojica"
+],
+0,
+"Brat — мужской род: dva."
+],
+[
+"Imam ___ sestre. (2)",
+[
+"dve",
+"dva",
+"dvoje",
+"dvojica"
+],
+0,
+"Sestra — женский род: dve."
+],
+[
+"Imam ___ dece. (2)",
+[
+"dvoje",
+"dva",
+"dve",
+"dvaju"
+],
+0,
+"Для детей используется dvoje."
+],
+[
+"Obe ___ žive ovde.",
+[
+"sestre",
+"sestra",
+"sestru",
+"sestara"
+],
+0,
+"Obe + множественное число: sestre."
+],
+[
+"Dvadeset jedan ___. (dan)",
+[
+"dan",
+"dana",
+"dani",
+"dane"
+],
+0,
+"После 21 стоит единственное число: dan."
+],
+[
+"Dvadeset dva ___. (dan)",
+[
+"dana",
+"dan",
+"dani",
+"dane"
+],
+0,
+"После 22 используется форма: dana."
+],
+[
+"Danas je ___ novembar. (5.)",
+[
+"peti",
+"pet",
+"petog",
+"petom"
+],
+0,
+"Дата выражается порядковым числительным: peti."
+]
+]
+},
+{
+"id": "b1-08",
+"lvl": "B1",
+"n": 8,
+"title": "Безличные конструкции",
+"g": [
+{
+"h": "Погода и состояние",
+"t": "<b>Pada kiša</b> — идёт дождь. <b>Pada sneg</b> — идёт снег. <b>Duva vetar</b> — дует ветер. <b>Hladno je</b> — холодно. <b>Toplo je</b> — тепло. Чувство человека выражается дательным падежом: <b>Hladno mi je</b> — мне холодно, <b>Dosadno mi je</b> — мне скучно."
+},
+{
+"h": "Конструкции с mi je",
+"t": "<b>Drago mi je</b> — рад. <b>Žao mi je</b> — жаль. <b>Svejedno mi je</b> — мне всё равно. <b>Nije mi dobro</b> — мне нехорошо. Эти конструкции используют краткие формы <b>mi, ti, mu, joj, nam, vam, im</b>."
+},
+{
+"h": "Страдательное значение с se",
+"t": "Безличные обороты образуются с <b>se</b>: <b>Ovde se govori srpski</b> — здесь говорят по-сербски. <b>Kako se kaže…?</b> — как говорят…? <b>Ne puši se</b> — не курят. <b>Mora se</b> — надо."
+},
+{
+"h": "Короткие безличные слова",
+"t": "<b>Nema veze</b> — ничего страшного. <b>Šteta je</b> — жаль. <b>Jasno je</b> — ясно. <b>Ne vredi</b> — бесполезно. <b>Treba da…</b> — нужно, чтобы…: <b>Treba da ideš</b>."
+}
+],
+"w": [
+[
+"hladno mi je",
+"мне холодно"
+],
+[
+"toplo mi je",
+"мне тепло"
+],
+[
+"žao mi je",
+"мне жаль"
+],
+[
+"drago mi je",
+"мне приятно"
+],
+[
+"dosadno mi je",
+"мне скучно"
+],
+[
+"svejedno mi je",
+"мне всё равно"
+],
+[
+"nema veze",
+"ничего страшного"
+],
+[
+"šteta je",
+"жаль"
+],
+[
+"jasno je",
+"ясно"
+],
+[
+"ne vredi",
+"бесполезно"
+],
+[
+"treba da",
+"нужно, чтобы"
+],
+[
+"mora se",
+"надо"
+]
+],
+"d": [
+[
+"Hladno mi je. Možeš li zatvoriti prozor?",
+"Мне холодно. Можешь закрыть окно?"
+],
+[
+"Naravno. Žao mi je što je hladno.",
+"Конечно. Жаль, что холодно."
+],
+[
+"Kako se kaže hvala na ruskom?",
+"Как будет «спасибо» по-русски?"
+],
+[
+"Kaže se spasibo.",
+"Говорят «спасибо»."
+],
+[
+"Ovde se ne puši.",
+"Здесь не курят."
+],
+[
+"Nema veze, nije važno.",
+"Ничего страшного, это неважно."
+]
+],
+"x": [
+[
+"___ mi je. (холодно)",
+[
+"Hladno",
+"Hladan",
+"Hladna",
+"Hladni"
+],
+0,
+"Hladno mi je."
+],
+[
+"Žao ___ je.",
+[
+"mi",
+"me",
+"ja",
+"mene"
+],
+0,
+"Дательный падеж: žao mi je."
+],
+[
+"Ovde ___ govori srpski.",
+[
+"se",
+"sam",
+"je",
+"ću"
+],
+0,
+"Безличный оборот: ovde se govori."
+],
+[
+"Nema ___. (ничего страшного)",
+[
+"veze",
+"vezu",
+"veza",
+"vezi"
+],
+0,
+"Nema veze — устойчивое выражение."
+],
+[
+"Kako ___ kaže dobar dan?",
+[
+"se",
+"mi",
+"ti",
+"je"
+],
+0,
+"Kako se kaže — как говорят."
+],
+[
+"Šteta ___ nisi došao.",
+[
+"što",
+"da",
+"jer",
+"kad"
+],
+0,
+"Šteta je što — жаль, что."
+],
+[
+"Pada ___.",
+[
+"kiša",
+"kišu",
+"kiše",
+"kiši"
+],
+0,
+"Pada kiša — именительный падеж."
+]
+]
 }
 ]
 }
