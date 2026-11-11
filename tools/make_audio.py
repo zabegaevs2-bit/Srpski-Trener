@@ -7,7 +7,7 @@ Writes audio/clips/*.mp3, audio/car/*.mp3, audio/manifest.json
 Needs: pip install edge-tts, and ffmpeg/ffprobe in PATH.
 Set FAKE_TTS=1 to test the pipeline offline (tones instead of speech).
 """
-import asyncio, hashlib, json, os, subprocess, sys, tempfile
+import asyncio, hashlib, json, os, re, subprocess, sys, tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -47,6 +47,13 @@ def clip_path(lang, text):
     return CLIPS / f"{lang}-{h}.mp3"
 
 
+def clean_ru(text):
+    """Russian glosses carry notes like '(экав.)' or '/'; read only the plain words."""
+    t = re.sub(r"\([^)]*\)", " ", text)
+    t = re.sub(r"[«»\"/]", " ", t)
+    return re.sub(r"\s+", " ", t).strip() or text
+
+
 async def synth(lang, text):
     p = clip_path(lang, text)
     if p.exists() and p.stat().st_size > 500:
@@ -56,17 +63,21 @@ async def synth(lang, text):
             "-ar", "24000", "-ac", "1", "-b:a", "48k", str(p))
         return p
     import edge_tts
-    for attempt in range(5):
+    for attempt in range(6):
         try:
             rate = SR_RATE if lang == "sr" else "+0%"
-            spoken = to_cyr(text) if lang == "sr" else text
+            spoken = to_cyr(text) if lang == "sr" else clean_ru(text)
             await edge_tts.Communicate(spoken, VOICE[lang], rate=rate).save(str(p))
             if p.stat().st_size > 500:
                 return p
         except Exception as e:  # network hiccup: retry
             print("retry", lang, text[:30], e, file=sys.stderr)
-            await asyncio.sleep(2 + attempt * 2)
-    raise RuntimeError(f"TTS failed: {lang} {text}")
+            await asyncio.sleep(3 + attempt * 4)
+    # Never fail the whole site for one clip: leave a short silence and report it.
+    print("GAVE UP, silent placeholder:", lang, text, file=sys.stderr)
+    run("ffmpeg", "-y", "-f", "lavfi", "-i", "anullsrc=r=24000:cl=mono", "-t", "0.3",
+        "-ar", "24000", "-ac", "1", "-b:a", "8k", str(p))  # tiny file: next build retries it
+    return p
 
 
 def duration(path):
@@ -87,7 +98,7 @@ async def main():
     course = json.loads((ROOT / "data" / "course.json").read_text(encoding="utf-8"))
     CLIPS.mkdir(parents=True, exist_ok=True)
     CAR.mkdir(parents=True, exist_ok=True)
-    sem = asyncio.Semaphore(6)
+    sem = asyncio.Semaphore(3)
 
     async def limited(lang, text):
         async with sem:
