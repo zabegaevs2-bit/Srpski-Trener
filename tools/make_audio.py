@@ -56,7 +56,7 @@ def clean_ru(text):
 
 async def synth(lang, text):
     p = clip_path(lang, text)
-    if p.exists() and p.stat().st_size > 500:
+    if p.exists() and p.stat().st_size > 1200:
         return p
     if FAKE:
         run("ffmpeg", "-y", "-f", "lavfi", "-i", f"sine=frequency={300 + len(text) * 7}:duration={0.4 + len(text) * 0.06:.2f}",
@@ -68,7 +68,7 @@ async def synth(lang, text):
             rate = SR_RATE if lang == "sr" else "+0%"
             spoken = to_cyr(text) if lang == "sr" else clean_ru(text)
             await edge_tts.Communicate(spoken, VOICE[lang], rate=rate).save(str(p))
-            if p.stat().st_size > 500:
+            if p.stat().st_size > 1200:
                 return p
         except Exception as e:  # network hiccup: retry
             print("retry", lang, text[:30], e, file=sys.stderr)
