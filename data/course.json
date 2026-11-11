@@ -2091,6 +2091,1841 @@
 "Дательный клитик: joj."
 ]
 ]
+},
+{
+"id": "a2-01",
+"lvl": "A2",
+"n": 1,
+"title": "Прошедшее время",
+"g": [
+{
+"h": "Как строится",
+"t": "Прошедшее время (<b>perfekat</b>) состоит из двух частей: короткой формы глагола <b>biti</b> (<b>sam, si, je, smo, ste, su</b>) и причастия на <b>-l</b>. Причастие меняется по роду и числу: <b>radio / radila / radilo</b>, во множественном числе <b>radili / radile / radila</b>. Мужчина говорит <b>Ja sam radio</b>, женщина <b>Ja sam radila</b>."
+},
+{
+"h": "Порядок слов",
+"t": "Короткая форма <b>sam, si, je…</b> безударная и стоит на втором месте, сразу после первого слова: <b>Juče sam radio</b>, а не «Juče radio sam». Если фраза начинается с глагола, то он занимает первое место: <b>Radio sam juče</b>."
+},
+{
+"h": "Частые неправильные глаголы",
+"t": "<b>biti</b> → bio, bila, bilo. <b>ići</b> → išao, išla. <b>doći</b> → došao, došla. <b>reći</b> → rekao, rekla. <b>videti</b> → video, videla. <b>jesti</b> → jeo, jela. <b>piti</b> → pio, pila. <b>moći</b> → mogao, mogla. <b>hteti</b> → hteo, htela."
+},
+{
+"h": "Отрицание и вопрос",
+"t": "<b>Nisam radio</b> — я не работал. <b>Jesi li radio?</b> — ты работал? Ответ: <b>Jesam</b> (да) или <b>Nisam</b> (нет)."
+}
+],
+"w": [
+[
+"juče",
+"вчера"
+],
+[
+"jutros",
+"сегодня утром"
+],
+[
+"prošle nedelje",
+"на прошлой неделе"
+],
+[
+"već",
+"уже"
+],
+[
+"još",
+"ещё"
+],
+[
+"nikad",
+"никогда"
+],
+[
+"ikad",
+"когда-либо"
+],
+[
+"bio",
+"был"
+],
+[
+"išao",
+"ходил, ехал"
+],
+[
+"video",
+"видел"
+],
+[
+"rekao",
+"сказал"
+],
+[
+"pio",
+"пил"
+]
+],
+"d": [
+[
+"Šta si radio juče?",
+"Что ты делал вчера?"
+],
+[
+"Juče sam bio na poslu.",
+"Вчера я был на работе."
+],
+[
+"A posle posla?",
+"А после работы?"
+],
+[
+"Posle posla sam otišao kod brata.",
+"После работы я пошёл к брату."
+],
+[
+"Jesi li ikad bio u Beogradu?",
+"Ты когда-нибудь был в Белграде?"
+],
+[
+"Nisam, ali sam video Novi Sad.",
+"Нет, но я видел Нови-Сад."
+]
+],
+"x": [
+[
+"Ja ___ juče bio kod kuće.",
+[
+"sam",
+"si",
+"je",
+"smo"
+],
+0,
+"С ja используется sam: ja sam bio."
+],
+[
+"Mi ___ jeli ručak.",
+[
+"smo",
+"sam",
+"su",
+"ste"
+],
+0,
+"С mi используется smo: mi smo jeli."
+],
+[
+"Ona je ___ na poslu. (biti)",
+[
+"bio",
+"bila",
+"bilo",
+"bili"
+],
+1,
+"Ona — женский род: bila."
+],
+[
+"Marko je ___ film. (videti)",
+[
+"video",
+"videla",
+"videlo",
+"videli"
+],
+0,
+"Marko — мужской род: video."
+],
+[
+"Oni su ___ u Beogradu. (biti, м.р.)",
+[
+"bio",
+"bila",
+"bili",
+"bile"
+],
+2,
+"Мужской род, множественное число: bili."
+],
+[
+"Как сказать «Я не знал» (мужчина)?",
+[
+"Nisam znao",
+"Ne znam",
+"Neću znati",
+"Nije znao"
+],
+0,
+"nisam + причастие: nisam znao."
+],
+[
+"Šta si ___ juče? (raditi)",
+[
+"radim",
+"radio",
+"radiš",
+"raditi"
+],
+1,
+"После si нужно причастие: radio."
+],
+[
+"Ana je ___ kafu. (piti)",
+[
+"pio",
+"pila",
+"pilo",
+"pili"
+],
+1,
+"Ana — женский род: pila."
+]
+]
+},
+{
+"id": "a2-02",
+"lvl": "A2",
+"n": 2,
+"title": "Будущее время",
+"g": [
+{
+"h": "Будущее время I",
+"t": "Строится из краткой формы <b>hteti</b>: <b>ću, ćeš, će, ćemo, ćete, će</b> и инфинитива: <b>Ja ću raditi</b>, <b>ti ćeš raditi</b>, <b>mi ćemo raditi</b>. Эти формы безударные и стоят на втором месте: <b>Sutra ću raditi</b>."
+},
+{
+"h": "Глагол на -ći",
+"t": "Если инфинитив оканчивается на <b>-ći</b>, то -i выпадает и форма <b>ću</b> идёт после него: <b>Doći ću</b>, <b>Ići ću</b>. Так же говорят <b>Ja ću doći</b>, если перед глаголом стоит подлежащее."
+},
+{
+"h": "Отрицание",
+"t": "Отрицательные формы пишутся слитно: <b>neću, nećeš, neće, nećemo, nećete, neće</b>. <b>Neću doći</b> — я не приду."
+},
+{
+"h": "Вопрос",
+"t": "<b>Hoćeš li doći?</b> — ты придёшь? Ответ: <b>Hoću</b> (да) или <b>Neću</b> (нет)."
+}
+],
+"w": [
+[
+"sutra",
+"завтра"
+],
+[
+"prekosutra",
+"послезавтра"
+],
+[
+"večeras",
+"сегодня вечером"
+],
+[
+"sledeće nedelje",
+"на следующей неделе"
+],
+[
+"uskoro",
+"скоро"
+],
+[
+"kasnije",
+"позже"
+],
+[
+"odmah",
+"сейчас же"
+],
+[
+"možda",
+"может быть"
+],
+[
+"sigurno",
+"точно"
+],
+[
+"doći",
+"прийти"
+],
+[
+"ostati",
+"остаться"
+],
+[
+"naravno",
+"конечно"
+]
+],
+"d": [
+[
+"Šta ćeš raditi sutra?",
+"Что ты будешь делать завтра?"
+],
+[
+"Sutra ću raditi do pet.",
+"Завтра буду работать до пяти."
+],
+[
+"A večeras?",
+"А сегодня вечером?"
+],
+[
+"Večeras ću ostati kod kuće.",
+"Сегодня вечером останусь дома."
+],
+[
+"Hoćeš li doći kod mene u subotu?",
+"Придёшь ко мне в субботу?"
+],
+[
+"Doći ću, naravno.",
+"Приду, конечно."
+]
+],
+"x": [
+[
+"Ja ___ doći sutra.",
+[
+"ću",
+"ćeš",
+"će",
+"ćemo"
+],
+0,
+"С ja используется ću."
+],
+[
+"Mi ___ ostati kod kuće.",
+[
+"ćemo",
+"ću",
+"ćete",
+"će"
+],
+0,
+"С mi используется ćemo."
+],
+[
+"Oni ___ doći uskoro.",
+[
+"ćemo",
+"ćeš",
+"će",
+"ćete"
+],
+2,
+"С oni используется će."
+],
+[
+"Vi ___ doći u subotu?",
+[
+"ćete",
+"ćemo",
+"će",
+"ću"
+],
+0,
+"С vi используется ćete."
+],
+[
+"___ li doći sutra? (ты)",
+[
+"Hoćeš",
+"Hoću",
+"Hoće",
+"Hoćemo"
+],
+0,
+"Вопрос к ti: hoćeš li?"
+],
+[
+"Как сказать «Я не приду»?",
+[
+"Neću doći",
+"Ne dolazim",
+"Nisam došao",
+"Ne ću doći"
+],
+0,
+"Отрицание пишется слитно: neću."
+],
+[
+"Sutra ___ raditi do pet. (ja)",
+[
+"ću",
+"sam",
+"ćeš",
+"je"
+],
+0,
+"Будущее время: ću raditi."
+]
+]
+},
+{
+"id": "a2-03",
+"lvl": "A2",
+"n": 3,
+"title": "Вопросы и отрицание",
+"g": [
+{
+"h": "Вопросительные слова",
+"t": "<b>ko</b> кто, <b>šta</b> что, <b>gde</b> где, <b>kada</b> когда, <b>kako</b> как, <b>zašto</b> почему, <b>koliko</b> сколько, <b>koji / koja / koje</b> какой, <b>čiji / čija / čije</b> чей, <b>kuda</b> куда, <b>odakle</b> откуда."
+},
+{
+"h": "Вопрос «да или нет»",
+"t": "Используйте <b>da li</b> в начале фразы: <b>Da li govoriš srpski?</b> Или частицу <b>li</b> после глагола: <b>Govoriš li srpski?</b> Оба способа правильные."
+},
+{
+"h": "Двойное отрицание",
+"t": "В сербском отрицательные слова всегда идут вместе с <b>ne</b>: <b>Ne vidim nikoga</b> — я никого не вижу. <b>Ništa ne razumem</b> — я ничего не понимаю. <b>Nikad ne kasnim</b> — я никогда не опаздываю."
+},
+{
+"h": "Отрицательные слова",
+"t": "<b>niko</b> никто, <b>ništa</b> ничего, <b>nikad</b> никогда, <b>nigde</b> нигде, <b>nikakav</b> никакой."
+},
+{
+"h": "Потому что",
+"t": "<b>Jer</b> и <b>zato što</b> значат «потому что»: <b>Ne dolazim, jer nemam vremena.</b> Слово <b>zato</b> само по себе значит «поэтому»."
+}
+],
+"w": [
+[
+"zašto",
+"почему"
+],
+[
+"kada",
+"когда"
+],
+[
+"kako",
+"как"
+],
+[
+"koliko",
+"сколько"
+],
+[
+"koji",
+"какой"
+],
+[
+"čiji",
+"чей"
+],
+[
+"niko",
+"никто"
+],
+[
+"ništa",
+"ничего"
+],
+[
+"nikad",
+"никогда"
+],
+[
+"nigde",
+"нигде"
+],
+[
+"jer",
+"потому что"
+],
+[
+"zato",
+"поэтому"
+]
+],
+"d": [
+[
+"Zašto ne dolaziš?",
+"Почему ты не приходишь?"
+],
+[
+"Zato što nemam vremena.",
+"Потому что у меня нет времени."
+],
+[
+"Kada si slobodan?",
+"Когда ты свободен?"
+],
+[
+"Nikad nisam slobodan!",
+"Я никогда не свободен!"
+],
+[
+"Koliko košta ova knjiga?",
+"Сколько стоит эта книга?"
+],
+[
+"Ništa ne razumem.",
+"Я ничего не понимаю."
+]
+],
+"x": [
+[
+"___ ne dolaziš?",
+[
+"Zašto",
+"Gde",
+"Ko",
+"Čiji"
+],
+0,
+"Zašto — почему."
+],
+[
+"Ne vidim ___. (никого)",
+[
+"nikoga",
+"niko",
+"nikome",
+"nikim"
+],
+0,
+"Вин. падеж от niko: nikoga."
+],
+[
+"Ne znam ___. (ничего)",
+[
+"ništa",
+"nešto",
+"sve",
+"nikad"
+],
+0,
+"Ništa — ничего, и обязательно с ne."
+],
+[
+"___ je ova kuća? (чья)",
+[
+"Čiji",
+"Čija",
+"Čije",
+"Koji"
+],
+1,
+"Kuća — женский род: čija."
+],
+[
+"Как спросить «Сколько стоит?»",
+[
+"Koliko košta?",
+"Kako košta?",
+"Gde košta?",
+"Šta košta?"
+],
+0,
+"Koliko — сколько."
+],
+[
+"Как сказать «потому что»?",
+[
+"jer",
+"zato",
+"zašto",
+"kada"
+],
+0,
+"Jer = потому что. Zato = поэтому."
+],
+[
+"Ona ___ kasni. (никогда не)",
+[
+"nikad",
+"uvek",
+"nigde",
+"niko"
+],
+0,
+"Ona nikad ne kasni: nikad с ne."
+]
+]
+},
+{
+"id": "a2-04",
+"lvl": "A2",
+"n": 4,
+"title": "Множественное число",
+"g": [
+{
+"h": "Именительный падеж",
+"t": "Мужской род: <b>-i</b>: <b>student → studenti</b>, <b>prijatelj → prijatelji</b>. У коротких слов добавляется <b>-ov-/-ev-</b>: <b>grad → gradovi</b>, <b>sin → sinovi</b>. Женский род: <b>-a → -e</b>: <b>kuća → kuće</b>, <b>knjiga → knjige</b>. Средний род: <b>-o/-e → -a</b>: <b>selo → sela</b>, <b>more → mora</b>."
+},
+{
+"h": "Особые слова",
+"t": "<b>čovek</b> → <b>ljudi</b> (люди). <b>dete</b> → <b>deca</b> (дети). <b>brat</b> → <b>braća</b> (братья). <b>dan</b> → <b>dani</b>. <b>godina</b> → <b>godine</b>, но после пяти: <b>pet godina</b>."
+},
+{
+"h": "После числительных",
+"t": "После 2, 3, 4 ставится форма, похожая на единственное число родительного падежа: <b>dva brata, tri knjige, četiri grada</b>. После 5 и далее ставится родительный падеж множественного числа с окончанием <b>-a</b>: <b>pet knjiga, deset godina</b>."
+},
+{
+"h": "Дательный, творительный, предложный",
+"t": "Для мужского и среднего рода <b>-ima</b>, для женского <b>-ama</b>: <b>sa prijateljima</b>, <b>o gradovima</b>, <b>sa ženama</b>, <b>o knjigama</b>."
+}
+],
+"w": [
+[
+"ljudi",
+"люди"
+],
+[
+"deca",
+"дети"
+],
+[
+"gradovi",
+"города"
+],
+[
+"dani",
+"дни"
+],
+[
+"godine",
+"годы"
+],
+[
+"stvari",
+"вещи"
+],
+[
+"prijatelji",
+"друзья"
+],
+[
+"studenti",
+"студенты"
+],
+[
+"knjige",
+"книги"
+],
+[
+"kuće",
+"дома"
+],
+[
+"sela",
+"деревни"
+],
+[
+"oči",
+"глаза"
+]
+],
+"d": [
+[
+"Koliko imaš prijatelja?",
+"Сколько у тебя друзей?"
+],
+[
+"Imam mnogo prijatelja.",
+"У меня много друзей."
+],
+[
+"Ovo su moje knjige.",
+"Это мои книги."
+],
+[
+"Ove kuće su nove.",
+"Эти дома новые."
+],
+[
+"Idem sa prijateljima u grad.",
+"Иду с друзьями в город."
+],
+[
+"Živimo ovde već pet godina.",
+"Мы живём здесь уже пять лет."
+]
+],
+"x": [
+[
+"Ovo su moje ___. (knjiga)",
+[
+"knjige",
+"knjiga",
+"knjigu",
+"knjigama"
+],
+0,
+"Именительный множественного числа ж.р.: knjige."
+],
+[
+"Imam dva ___. (brat)",
+[
+"brata",
+"braće",
+"bratovi",
+"brate"
+],
+0,
+"После dva: brata."
+],
+[
+"Imam pet ___. (godina)",
+[
+"godine",
+"godina",
+"godinu",
+"godini"
+],
+1,
+"После пяти: родительный множественного: godina."
+],
+[
+"Mnogo ___ je ovde. (ljudi)",
+[
+"ljudi",
+"ljudima",
+"čoveka",
+"ljude"
+],
+0,
+"Mnogo ljudi — много людей."
+],
+[
+"To su lepi ___. (grad)",
+[
+"gradovi",
+"grada",
+"gradu",
+"gradova"
+],
+0,
+"Именительный множественного: gradovi."
+],
+[
+"Idem sa ___. (prijatelji)",
+[
+"prijatelji",
+"prijatelja",
+"prijateljima",
+"prijatelje"
+],
+2,
+"sa + творительный множественного: prijateljima."
+],
+[
+"Ove ___ su nove. (kuća)",
+[
+"kuće",
+"kuća",
+"kuću",
+"kući"
+],
+0,
+"Kuća во множественном числе: kuće."
+]
+]
+},
+{
+"id": "a2-05",
+"lvl": "A2",
+"n": 5,
+"title": "Числа, цены, покупки",
+"g": [
+{
+"h": "Числа 11–20",
+"t": "<b>jedanaest, dvanaest, trinaest, četrnaest, petnaest, šesnaest, sedamnaest, osamnaest, devetnaest, dvadeset</b>. Основа та же, что и у 1–10, плюс <b>-naest</b>."
+},
+{
+"h": "Десятки и сотни",
+"t": "<b>trideset, četrdeset, pedeset, šezdeset, sedamdeset, osamdeset, devedeset, sto</b>. Дальше: <b>dvesta, trista, četristo, petsto</b>, <b>hiljada</b> (тысяча). Составные числа соединяются без «и»: <b>dvadeset pet, sto dvadeset</b>."
+},
+{
+"h": "Деньги",
+"t": "Валюта Сербии — динар (<b>RSD</b>). <b>sto dinara</b>, <b>dvesta dinara</b>, <b>hiljadu dinara</b>. После 5 и далее слово <b>dinar</b> принимает форму <b>dinara</b>."
+},
+{
+"h": "В магазине",
+"t": "<b>Koliko košta?</b> — сколько стоит? <b>Izvolite</b> — пожалуйста (когда подают или предлагают). <b>Može li kartica?</b> — можно картой? <b>Račun, molim</b> — счёт, пожалуйста. <b>Preskupo je</b> — слишком дорого."
+}
+],
+"w": [
+[
+"koliko košta",
+"сколько стоит"
+],
+[
+"skupo",
+"дорого"
+],
+[
+"jeftino",
+"дёшево"
+],
+[
+"račun",
+"счёт, чек"
+],
+[
+"plaćati",
+"платить"
+],
+[
+"dinar",
+"динар"
+],
+[
+"sto",
+"сто"
+],
+[
+"hiljada",
+"тысяча"
+],
+[
+"kusur",
+"сдача"
+],
+[
+"kartica",
+"банковская карта"
+],
+[
+"gotovina",
+"наличные"
+],
+[
+"izvolite",
+"пожалуйста"
+]
+],
+"d": [
+[
+"Dobar dan! Izvolite.",
+"Добрый день! Слушаю вас."
+],
+[
+"Koliko košta ovaj hleb?",
+"Сколько стоит этот хлеб?"
+],
+[
+"Hleb košta osamdeset dinara.",
+"Хлеб стоит восемьдесят динаров."
+],
+[
+"Može li kartica?",
+"Можно картой?"
+],
+[
+"Naravno, može.",
+"Конечно, можно."
+],
+[
+"Račun, molim.",
+"Счёт, пожалуйста."
+]
+],
+"x": [
+[
+"Как будет 20?",
+[
+"dvadeset",
+"dvanaest",
+"dvesta",
+"deset"
+],
+0,
+"Dvadeset — 20, dvanaest — 12."
+],
+[
+"Как будет 50?",
+[
+"petnaest",
+"pedeset",
+"petsto",
+"pet"
+],
+1,
+"Pedeset — 50, petnaest — 15."
+],
+[
+"Как будет 100?",
+[
+"sto",
+"hiljada",
+"deset",
+"dvesta"
+],
+0,
+"Sto — 100."
+],
+[
+"Как будет 1000?",
+[
+"hiljada",
+"sto",
+"deset",
+"milion"
+],
+0,
+"Hiljada — 1000."
+],
+[
+"Как спросить цену?",
+[
+"Koliko košta?",
+"Šta košta?",
+"Gde košta?",
+"Zašto košta?"
+],
+0,
+"Koliko košta? — сколько стоит?"
+],
+[
+"Hleb košta pet ___. (dinar)",
+[
+"dinara",
+"dinar",
+"dinari",
+"dinare"
+],
+0,
+"После 5: родительный множественного: dinara."
+],
+[
+"Как будет 13?",
+[
+"trinaest",
+"trideset",
+"tri",
+"treći"
+],
+0,
+"Trinaest — 13, trideset — 30."
+]
+]
+},
+{
+"id": "a2-06",
+"lvl": "A2",
+"n": 6,
+"title": "Время, дни, даты",
+"g": [
+{
+"h": "Дни недели",
+"t": "<b>ponedeljak, utorak, sreda, četvrtak, petak, subota, nedelja</b>. Слово <b>nedelja</b> значит и «воскресенье», и «неделя». «В понедельник» — <b>u ponedeljak</b>, «в среду» — <b>u sredu</b> (винительный падеж)."
+},
+{
+"h": "Месяцы",
+"t": "<b>januar, februar, mart, april, maj, jun, jul, avgust, septembar, oktobar, novembar, decembar</b>. Дата: <b>Danas je petak, peti novembar.</b>"
+},
+{
+"h": "Который час",
+"t": "<b>Koliko je sati?</b> — Который час? <b>Pet je sati</b> — пять часов. <b>U pet sati</b> — в пять часов. <b>Šest i petnaest</b> — 6:15. <b>Petnaest do šest</b> — без пятнадцати шесть."
+},
+{
+"h": "Ловушка: pola",
+"t": "<b>Pola šest</b> значит 5:30, а не 6:30. «Половина перед шестью». Русская конструкция «половина шестого» устроена так же."
+},
+{
+"h": "Время суток",
+"t": "<b>ujutru</b> утром, <b>popodne</b> днём, <b>uveče</b> вечером, <b>noću</b> ночью, <b>u podne</b> в полдень, <b>u ponoć</b> в полночь."
+}
+],
+"w": [
+[
+"ponedeljak",
+"понедельник"
+],
+[
+"utorak",
+"вторник"
+],
+[
+"sreda",
+"среда"
+],
+[
+"četvrtak",
+"четверг"
+],
+[
+"petak",
+"пятница"
+],
+[
+"subota",
+"суббота"
+],
+[
+"nedelja",
+"воскресенье"
+],
+[
+"sat",
+"час"
+],
+[
+"minut",
+"минута"
+],
+[
+"podne",
+"полдень"
+],
+[
+"ponoć",
+"полночь"
+],
+[
+"kasno",
+"поздно"
+]
+],
+"d": [
+[
+"Koliko je sati?",
+"Который час?"
+],
+[
+"Pola šest.",
+"Половина шестого."
+],
+[
+"Kada počinje čas?",
+"Когда начинается урок?"
+],
+[
+"U ponedeljak u devet sati.",
+"В понедельник в девять часов."
+],
+[
+"Koji je danas dan?",
+"Какой сегодня день?"
+],
+[
+"Danas je petak, peti novembar.",
+"Сегодня пятница, пятое ноября."
+]
+],
+"x": [
+[
+"Koliko je ___?",
+[
+"sati",
+"sat",
+"satu",
+"satovi"
+],
+0,
+"Koliko je sati? — устойчивый вопрос."
+],
+[
+"5:30 по-сербски:",
+[
+"pola šest",
+"pola pet",
+"šest i po",
+"pet manje pola"
+],
+0,
+"Pola šest = 5:30."
+],
+[
+"U ___ imam čas. (понедельник)",
+[
+"ponedeljak",
+"ponedeljka",
+"ponedeljku",
+"ponedeljkom"
+],
+0,
+"u + винительный: u ponedeljak."
+],
+[
+"День после пятницы:",
+[
+"subota",
+"sreda",
+"nedelja",
+"utorak"
+],
+0,
+"Posle petka je subota."
+],
+[
+"Месяц после октября:",
+[
+"novembar",
+"septembar",
+"decembar",
+"avgust"
+],
+0,
+"Posle oktobra je novembar."
+],
+[
+"Если сегодня среда, то завтра:",
+[
+"četvrtak",
+"utorak",
+"petak",
+"sreda"
+],
+0,
+"Posle srede je četvrtak."
+],
+[
+"Как сказать «в полночь»?",
+[
+"u ponoć",
+"u podne",
+"u ponedeljak",
+"uveče"
+],
+0,
+"Ponoć — полночь."
+]
+]
+},
+{
+"id": "a2-07",
+"lvl": "A2",
+"n": 7,
+"title": "Сравнение",
+"g": [
+{
+"h": "Сравнительная степень",
+"t": "Обычно к основе добавляется <b>-iji</b> или <b>-ji</b>: <b>nov → noviji</b>, <b>jeftin → jeftiniji</b>, <b>star → stariji</b>, <b>skup → skuplji</b>, <b>brz → brži</b>, <b>lep → lepši</b>. Окончания сравнительной степени как у обычного прилагательного: <b>noviji, novija, novije</b>."
+},
+{
+"h": "Неправильные формы",
+"t": "<b>dobar → bolji</b>, <b>loš → gori</b>, <b>velik → veći</b>, <b>mali → manji</b>, <b>mlad → mlađi</b>, <b>mnogo → više</b>, <b>malo → manje</b>. Их нужно запомнить."
+},
+{
+"h": "Сравнение с «чем»",
+"t": "Предмет сравнения ставится в родительный падеж с предлогом <b>od</b>: <b>Beograd je veći od Niša</b>. <b>Moj brat je stariji od mene.</b>"
+},
+{
+"h": "Превосходная степень",
+"t": "Присоединяется приставка <b>naj-</b>: <b>najbolji, najveći, najlepši, najjeftiniji</b>. <b>Ovo je najbolja kafa u gradu.</b>"
+},
+{
+"h": "Равенство",
+"t": "<b>Isto kao</b> — так же, как: <b>Ona je visoka kao ja</b>. <b>Nije tako dobro kao juče</b> — не так хорошо, как вчера."
+}
+],
+"w": [
+[
+"veći",
+"больший"
+],
+[
+"manji",
+"меньший"
+],
+[
+"bolji",
+"лучший"
+],
+[
+"gori",
+"худший"
+],
+[
+"stariji",
+"старший"
+],
+[
+"mlađi",
+"младший"
+],
+[
+"brži",
+"быстрее"
+],
+[
+"sporiji",
+"медленнее"
+],
+[
+"skuplji",
+"дороже"
+],
+[
+"jeftiniji",
+"дешевле"
+],
+[
+"najbolji",
+"самый лучший"
+],
+[
+"najveći",
+"самый большой"
+]
+],
+"d": [
+[
+"Koji grad je veći, Beograd ili Novi Sad?",
+"Какой город больше, Белград или Нови-Сад?"
+],
+[
+"Beograd je veći od Novog Sada.",
+"Белград больше Нови-Сада."
+],
+[
+"A koji je lepši?",
+"А какой красивее?"
+],
+[
+"Za mene je Novi Sad lepši.",
+"Для меня Нови-Сад красивее."
+],
+[
+"Ovo je najbolja kafa u gradu.",
+"Это лучший кофе в городе."
+],
+[
+"Moj brat je stariji od mene.",
+"Мой брат старше меня."
+]
+],
+"x": [
+[
+"Beograd je ___ od Niša. (veliki)",
+[
+"veći",
+"velikiji",
+"najveći",
+"većeg"
+],
+0,
+"Veliki → veći (неправильная форма)."
+],
+[
+"Moj brat je ___ od mene. (star)",
+[
+"stariji",
+"star",
+"najstariji",
+"starije"
+],
+0,
+"Star → stariji."
+],
+[
+"Ova kafa je ___. (лучшая, ж.р.)",
+[
+"najbolja",
+"bolja",
+"dobra",
+"najbolji"
+],
+0,
+"Naj- + bolja: najbolja."
+],
+[
+"Hleb je ___ od mesa. (jeftin)",
+[
+"jeftiniji",
+"jeftin",
+"najjeftiniji",
+"jeftinije"
+],
+0,
+"Jeftin → jeftiniji."
+],
+[
+"Ovaj auto je ___ od onog. (skup)",
+[
+"skuplji",
+"skupiji",
+"skup",
+"najskuplji"
+],
+0,
+"Skup → skuplji."
+],
+[
+"Ona je ___ od mene. (mlada)",
+[
+"mlađa",
+"mlada",
+"mladija",
+"najmlađa"
+],
+0,
+"Mlad → mlađi, ж.р. mlađa."
+],
+[
+"Ovo je ___ grad. (самый большой)",
+[
+"najveći",
+"veći",
+"velik",
+"najveća"
+],
+0,
+"Grad — м.р.: najveći."
+]
+]
+},
+{
+"id": "a2-08",
+"lvl": "A2",
+"n": 8,
+"title": "Возвратные глаголы",
+"g": [
+{
+"h": "Что такое se",
+"t": "Частица <b>se</b> присоединяется к глаголу и показывает, что действие направлено на самого говорящего: <b>zovem se</b> (меня зовут), <b>budim se</b> (просыпаюсь), <b>umivam se</b> (умываюсь). Она безударная и стоит на втором месте во фразе: <b>Ja se zovem Marko</b>, <b>Danas se osećam dobro</b>."
+},
+{
+"h": "Se не меняется",
+"t": "В отличие от русского «-ся», <b>se</b> всегда одинаково и для всех лиц: <b>ja se budim, ti se budiš, mi se budimo</b>."
+},
+{
+"h": "Глаголы с se и падежами",
+"t": "<b>sećati se</b> + родительный: <b>Sećam se tebe</b>. <b>bojati se</b> + родительный: <b>Bojim se psa</b>. <b>smejati se</b> + дательный: <b>Smejem se prijatelju</b>. Не пытайтесь переносить падежи из русского."
+},
+{
+"h": "Вопрос и отрицание",
+"t": "<b>Sećaš li se?</b> — ты помнишь? <b>Ne sećam se.</b> — не помню. Отрицание ставится перед глаголом, а se остаётся на втором месте."
+}
+],
+"w": [
+[
+"zvati se",
+"называться"
+],
+[
+"buditi se",
+"просыпаться"
+],
+[
+"umivati se",
+"умываться"
+],
+[
+"oblačiti se",
+"одеваться"
+],
+[
+"vraćati se",
+"возвращаться"
+],
+[
+"sećati se",
+"помнить"
+],
+[
+"smejati se",
+"смеяться"
+],
+[
+"bojati se",
+"бояться"
+],
+[
+"osećati se",
+"чувствовать себя"
+],
+[
+"sastati se",
+"встретиться"
+],
+[
+"nalaziti se",
+"находиться"
+],
+[
+"odmarati se",
+"отдыхать"
+]
+],
+"d": [
+[
+"Kako se osećaš danas?",
+"Как ты себя чувствуешь сегодня?"
+],
+[
+"Dobro se osećam, hvala.",
+"Чувствую себя хорошо, спасибо."
+],
+[
+"U koliko sati se budiš?",
+"Во сколько ты просыпаешься?"
+],
+[
+"Budim se u sedam sati.",
+"Просыпаюсь в семь часов."
+],
+[
+"Sećaš li se tog restorana?",
+"Ты помнишь тот ресторан?"
+],
+[
+"Naravno da se sećam.",
+"Конечно помню."
+]
+],
+"x": [
+[
+"Ja ___ zovem Marko.",
+[
+"se",
+"sam",
+"si",
+"mi"
+],
+0,
+"Zovem se — меня зовут."
+],
+[
+"Mi ___ budimo u sedam.",
+[
+"se",
+"sam",
+"ste",
+"smo"
+],
+0,
+"Se — для всех лиц."
+],
+[
+"Sećam ___ tebe.",
+[
+"se",
+"me",
+"ti",
+"je"
+],
+0,
+"Sećati se + родительный: sećam se tebe."
+],
+[
+"Ne bojim ___.",
+[
+"se",
+"me",
+"mi",
+"ga"
+],
+0,
+"Bojati se: ne bojim se."
+],
+[
+"Kako ___ osećaš?",
+[
+"se",
+"ti",
+"te",
+"si"
+],
+0,
+"Kako se osećaš? — как себя чувствуешь?"
+],
+[
+"Dobro ___ osećamo.",
+[
+"se",
+"smo",
+"ste",
+"mi"
+],
+0,
+"Dobro se osećamo."
+],
+[
+"Как сказать «Меня зовут Ана»?",
+[
+"Zovem se Ana",
+"Zovem Ana",
+"Zoveš se Ana",
+"Zove se Ana"
+],
+0,
+"Zovem se Ana."
+],
+[
+"Vraćam ___ kući u pet.",
+[
+"se",
+"me",
+"ti",
+"ga"
+],
+0,
+"Vraćati se — возвращаться."
+]
+]
+},
+{
+"id": "a2-09",
+"lvl": "A2",
+"n": 9,
+"title": "Порядок слов и клитики",
+"g": [
+{
+"h": "Правило второго места",
+"t": "Безударные короткие слова (<b>клитики</b>) стоят на втором месте, после первого ударного слова или группы слов. К клитикам относятся: <b>li, sam/si/je/smo/ste/su, ću/ćeš…, mi/ti/mu/joj…, me/te/ga/je…, se</b>."
+},
+{
+"h": "Порядок клитиков",
+"t": "Если клитиков несколько, порядок такой: <b>li → вспомогательный глагол → дательный → винительный → se → je</b>. <b>Dao sam mu ga</b> — я дал ему это. <b>Da li si mi ga dao?</b> — ты дал мне это?"
+},
+{
+"h": "Что нельзя",
+"t": "Клитик не может стоять в начале фразы: нельзя «Mi se sviđa» или «Te zovem sutra». Правильно: <b>Sviđa mi se</b>, <b>Sutra te zovem</b>."
+},
+{
+"h": "Свободный порядок",
+"t": "Остальные слова можно переставлять, чтобы выделить главное. <b>Marko voli Anu</b> и <b>Anu voli Marko</b> — падежи показывают, кто что делает. Нейтральный порядок: подлежащее, глагол, дополнение."
+}
+],
+"w": [
+[
+"često",
+"часто"
+],
+[
+"retko",
+"редко"
+],
+[
+"ponekad",
+"иногда"
+],
+[
+"obično",
+"обычно"
+],
+[
+"odmah",
+"сразу"
+],
+[
+"već",
+"уже"
+],
+[
+"još",
+"ещё"
+],
+[
+"tek",
+"только что, лишь"
+],
+[
+"upravo",
+"как раз"
+],
+[
+"samo",
+"только"
+],
+[
+"čak",
+"даже"
+],
+[
+"ipak",
+"всё-таки"
+]
+],
+"d": [
+[
+"Jesi li video Marka?",
+"Ты видел Марка?"
+],
+[
+"Jesam, video sam ga juče.",
+"Да, видел его вчера."
+],
+[
+"Da li ti je dao knjigu?",
+"Он дал тебе книгу?"
+],
+[
+"Jeste, dao mi je jutros.",
+"Да, дал мне сегодня утром."
+],
+[
+"Zovem te sutra.",
+"Позвоню тебе завтра."
+],
+[
+"Hvala ti, javi mi se.",
+"Спасибо, дай мне знать."
+]
+],
+"x": [
+[
+"Выберите правильный порядок:",
+[
+"Ja ti ga dajem.",
+"Ja dajem ti ga.",
+"Ja ga ti dajem.",
+"Ja dajem ga ti."
+],
+0,
+"Клитики стоят после первого слова, дательный перед винительным."
+],
+[
+"Выберите правильный порядок:",
+[
+"Juče sam ga video.",
+"Juče video sam ga.",
+"Juče ga sam video.",
+"Sam juče ga video."
+],
+0,
+"Juče + sam + ga: вспомогательный глагол идёт перед ga."
+],
+[
+"Выберите правильный порядок:",
+[
+"Sviđa mi se.",
+"Mi se sviđa.",
+"Se mi sviđa.",
+"Sviđa se mi."
+],
+0,
+"Клитик не может быть первым."
+],
+[
+"Выберите правильный порядок:",
+[
+"Jesi li me čuo?",
+"Si li me jesi čuo?",
+"Jesi me li čuo?",
+"Li si me čuo?"
+],
+0,
+"Jesi li me čuo: li сразу после глагола."
+],
+[
+"Выберите правильный порядок:",
+[
+"Dao sam mu ga.",
+"Dao sam ga mu.",
+"Sam mu ga dao.",
+"Dao mu sam ga."
+],
+0,
+"Вспомогательный, потом дательный, потом винительный."
+],
+[
+"Выберите правильный порядок:",
+[
+"Sutra te zovem.",
+"Te sutra zovem.",
+"Sutra zovem te.",
+"Te zovem sutra."
+],
+0,
+"Te идёт после первого слова."
+],
+[
+"Выберите правильный порядок:",
+[
+"Dobro se osećam.",
+"Se dobro osećam.",
+"Dobro osećam se.",
+"Osećam dobro se."
+],
+0,
+"Se идёт после dobro."
+]
+]
+},
+{
+"id": "a2-10",
+"lvl": "A2",
+"n": 10,
+"title": "Движение и транспорт",
+"g": [
+{
+"h": "Глаголы движения",
+"t": "<b>ići</b> (идти, ехать): idem, ideš, ide, idemo, idete, idu. <b>dolaziti</b> (приходить): dolazim. <b>putovati</b> (путешествовать): putujem. <b>voziti</b> (водить, возить): vozim. Прошедшее: <b>išao, išla</b>; <b>stigao, stigla</b> (прибыл)."
+},
+{
+"h": "Транспорт",
+"t": "Средство передвижения стоит в творительном без предлога: <b>putujem vozom</b>, <b>idem autobusom</b>, <b>vozim auto</b>. «Пешком» — <b>peške</b>."
+},
+{
+"h": "Направление",
+"t": "<b>Idite pravo</b> — идите прямо. <b>Skrenite levo / desno</b> — поверните налево, направо. <b>Gde je…?</b> — где? <b>Do</b> — до: <b>do stanice</b>. <b>Na aerodrom</b>, <b>na stanicu</b>, <b>u centar</b> — куда."
+},
+{
+"h": "Билеты и расписание",
+"t": "<b>Jedna karta za Novi Sad, molim.</b> <b>Kada polazi voz?</b> — когда отправляется поезд? <b>Kada stiže?</b> — когда прибывает? <b>polazak</b> отправление, <b>dolazak</b> прибытие."
+}
+],
+"w": [
+[
+"stanica",
+"станция"
+],
+[
+"karta",
+"билет"
+],
+[
+"aerodrom",
+"аэропорт"
+],
+[
+"ulica",
+"улица"
+],
+[
+"raskrsnica",
+"перекрёсток"
+],
+[
+"desno",
+"направо, справа"
+],
+[
+"levo",
+"налево, слева"
+],
+[
+"pravo",
+"прямо"
+],
+[
+"daleko",
+"далеко"
+],
+[
+"blizu",
+"близко"
+],
+[
+"polazak",
+"отправление"
+],
+[
+"dolazak",
+"прибытие"
+]
+],
+"d": [
+[
+"Izvinite, gde je autobuska stanica?",
+"Извините, где автобусная станция?"
+],
+[
+"Idite pravo, pa levo.",
+"Идите прямо, потом налево."
+],
+[
+"Je li daleko odavde?",
+"Это далеко отсюда?"
+],
+[
+"Nije, pet minuta peške.",
+"Нет, пять минут пешком."
+],
+[
+"Jedna karta za Novi Sad, molim.",
+"Один билет до Нови-Сада, пожалуйста."
+],
+[
+"Voz polazi u deset i petnaest.",
+"Поезд отправляется в десять пятнадцать."
+]
+],
+"x": [
+[
+"Idite ___. (прямо)",
+[
+"pravo",
+"levo",
+"daleko",
+"blizu"
+],
+0,
+"Pravo — прямо."
+],
+[
+"Banka je ___, samo pet minuta peške. (рядом)",
+[
+"blizu",
+"daleko",
+"desno",
+"levo"
+],
+0,
+"Blizu — близко."
+],
+[
+"Treba mi ___ za Novi Sad.",
+[
+"karta",
+"kartu",
+"karte",
+"kartom"
+],
+0,
+"Именительный падеж: treba mi karta."
+],
+[
+"Putujem ___. (voz)",
+[
+"vozom",
+"voz",
+"voza",
+"vozu"
+],
+0,
+"Транспорт в творительном: vozom."
+],
+[
+"Idem ___ aerodrom.",
+[
+"na",
+"u",
+"od",
+"sa"
+],
+0,
+"Na aerodrom — в аэропорт."
+],
+[
+"Gde je ___? (станция)",
+[
+"stanica",
+"stanicu",
+"stanice",
+"stanici"
+],
+0,
+"Gde je stanica? — именительный."
+],
+[
+"Idem peške ___ posla.",
+[
+"do",
+"od",
+"iz",
+"kod"
+],
+0,
+"Do posla — до работы."
+],
+[
+"Dolazim ___ Beograda. (из)",
+[
+"iz",
+"u",
+"na",
+"do"
+],
+0,
+"Iz Beograda — из Белграда."
+]
+]
 }
 ]
 }
