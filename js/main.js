@@ -1,5 +1,5 @@
 /* ---------- reference, navigation, events ---------- */
-const TABS=[['course','К','Курс'],['review','П','Повтор'],['car','М','В машине'],['ref','С','Справка']];
+const TABS=[['course','К','Курс'],['review','П','Повтор'],['train','Т','Тренер'],['car','М','В машине'],['ref','С','Справка']];
 function tbl(head,rows){
   return '<div class="tbl"><table><thead><tr>'+head.map(h=>'<th>'+esc(h)+'</th>').join('')+'</tr></thead><tbody>'+
   rows.map(r=>'<tr>'+r.map((c,i)=>i===0?'<td><b>'+esc(c)+'</b></td>':'<td>'+esc(c)+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>';
@@ -36,6 +36,7 @@ function render(){
   let h;
   if(S.tab==='course')h=S.open&&lesson(S.open)?vLesson():vCourse();
   else if(S.tab==='review')h=vReview();
+  else if(S.tab==='train')h=vTrain();
   else if(S.tab==='car')h=vCar();
   else h=vRef();
   $('#app').innerHTML=h;
@@ -44,6 +45,7 @@ function render(){
 function up(){window.scrollTo(0,0)}
 function record(L,p,t,i,right){
   if(right)p.r++;else{p.w++;srsAdd(qKey(L,t,i))}
+  stat(L.id,right);
   bump(right);save();render();
 }
 function playSeq(texts){
@@ -76,7 +78,7 @@ document.addEventListener('click',e=>{
   case'seq':playSeq(L.d.map(x=>x[0]));return;
   case'pick':{
     if(cur.pick!==undefined)return;
-    const [t,i]=p.q[p.idx];const ans=t==='x'?L.x[i][2]:wordOpts(L,i).ans;
+    const [t,i]=p.q[p.idx];const ans=t==='x'?xShuf(L,i)[2]:wordOpts(L,i).ans;
     cur.pick=+d.k;record(L,p,t,i,cur.pick===ans);return;
   }
   case'tok':cur.built.push(+d.k);render();return;
@@ -101,7 +103,7 @@ document.addEventListener('click',e=>{
   case'rate':{const r=S.rev,k=r.keys[r.pos],right=d.k==='1';rateKey(k,right);if(right)r.ok++;else{r.no++;if(!r.re.includes(k)){r.re.push(k);r.keys.push(k)}}r.pos++;cur={};bump(right);save();render();up();return}
   case'rpick':{
     if(cur.pick!==undefined)return;const r=S.rev,k=r.keys[r.pos],it=item(k);
-    cur.pick=+d.k;const right=cur.pick===it.x[2];rateKey(k,right);
+    cur.pick=+d.k;const right=cur.pick===it.x[2];rateKey(k,right);stat(it.L.id,right);
     if(right)r.ok++;else{r.no++;if(!r.re.includes(k)){r.re.push(k);r.keys.push(k)}}
     bump(right);save();render();return;
   }

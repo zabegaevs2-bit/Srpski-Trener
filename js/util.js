@@ -17,7 +17,7 @@ function latToCyr(s){return s.replace(/(lj|nj|dž)|([a-zA-ZčćšđžČĆŠĐŽ]
 
 /* ---------- state (device storage) ---------- */
 const KEY='srpski-trener-v2';
-const DEF={t:0,tab:'course',script:'lat',done:{},prog:{},srs:{},rev:null,days:[],last:null,car:{id:null,t:0},tot:{r:0,w:0},sub:'tables'};
+const DEF={t:0,tab:'course',script:'lat',done:{},prog:{},srs:{},rev:null,days:[],last:null,car:{id:null,t:0},tot:{r:0,w:0},sub:'tables',stat:{},cst:{},tr:null,dlg:{},tsub:'weak',dopen:null};
 function fresh(o){return Object.assign({},JSON.parse(JSON.stringify(DEF)),o||{})}
 let S=fresh();
 try{const raw=localStorage.getItem(KEY);if(raw)S=fresh(JSON.parse(raw))}catch(e){}
@@ -29,13 +29,20 @@ function toast(m){const d=document.createElement('div');d.className='toast';d.te
 
 /* ---------- course + audio manifest ---------- */
 let COURSE={lessons:[]};
+let DIALOGS=[];
 let AUDIO={clips:{},car:{}};
 let AUDIO_OK=false;
 async function loadData(){
   try{const r=await fetch('data/course.json',{cache:'no-cache'});COURSE=await r.json()}catch(e){}
+  try{const r=await fetch('data/dialogs.json',{cache:'no-cache'});if(r.ok){DIALOGS=(await r.json()).dialogs||[]}}catch(e){}
   try{const r=await fetch('audio/manifest.json',{cache:'no-cache'});if(r.ok){AUDIO=await r.json();AUDIO_OK=true}}catch(e){}
 }
 const lesson=id=>COURSE.lessons.find(l=>l.id===id);
+const dialog=id=>DIALOGS.find(d=>d.id===id);
+/* answer options are shuffled for display (the stored answer is always index 0 in newer lessons) */
+function xShuf(L,i){const q=L.x[i];const idx=shuffle(q[1].map((_,k)=>k),hash(L.id+'x'+i));return [q[0],idx.map(k=>q[1][k]),idx.indexOf(q[2]),q[3]]}
+function stat(id,right){const s=S.stat[id]||(S.stat[id]={r:0,w:0});if(right)s.r++;else s.w++}
+function cstat(tag,right){const s=S.cst[tag]||(S.cst[tag]={r:0,w:0});if(right)s.r++;else s.w++}
 let clipEl=null;
 function stopClip(){try{if(clipEl){clipEl.pause();clipEl=null}}catch(e){}}
 function playClip(text){

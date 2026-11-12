@@ -102,7 +102,7 @@ function practiceView(L,p){
     const right=cur.pick===ans;
     return '<div class="card">'+label+text+'<div class="opts">'+o+'</div>'+(cur.pick!==undefined?'<div class="expl '+(right?'ok':'bad')+'"><b>'+(right?'Верно. ':'Не совсем. ')+'</b>'+esc(expl||'')+'</div>'+next:'')+'</div>';
   };
-  if(t==='x'){const it=L.x[i];return mcq(sentenceHtml(it[0],cur.pick!==undefined?it[1][it[2]]:''),it[1],it[2],it[3])}
+  if(t==='x'){const it=xShuf(L,i);return mcq(sentenceHtml(it[0],cur.pick!==undefined?it[1][it[2]]:''),it[1],it[2],it[3])}
   if(t==='w'){const {opts,ans}=wordOpts(L,i);return mcq('<p class="label">Как по-сербски?</p><p class="sr" style="font-weight:500">'+esc(L.w[i][1])+'</p>',opts,ans,L.w[i][0]+' — '+L.w[i][1])}
   if(t==='b'){
     const toks=L.d[i][0].split(' ');

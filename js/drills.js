@@ -1,4 +1,4 @@
-// Падежные упражнения: [предложение с ___, [варианты], индекс верного, падеж, объяснение]
+/* case and pronoun drills: [sentence, options, answerIndex, case, explanation] */
 const CASE_DRILL=[
 ['Nemam ___. (novac)',['novca','novac','novcu','novcem'],0,'Genitiv','После nemam — родительный. У слов с беглым -a- и т.п. основа может меняться, здесь novac → novca.'],
 ['Idem u ___. (škola)',['školi','školu','škola','školom'],1,'Akuzativ','u + КУДА? → винительный: školu. (u + ГДЕ? → локатив: u školi).'],

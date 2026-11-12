@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "audio"
 CLIPS = OUT / "clips"
 CAR = OUT / "car"
-VOICE = {"sr": "sr-RS-SophieNeural", "ru": "ru-RU-SvetlanaNeural"}
+VOICE = {"sr": "sr-RS-SophieNeural", "sr2": "sr-RS-NicholasNeural", "ru": "ru-RU-SvetlanaNeural"}
 FAKE = os.environ.get("FAKE_TTS") == "1"
 SR_RATE = "-5%"
 
@@ -65,8 +65,8 @@ async def synth(lang, text):
     import edge_tts
     for attempt in range(6):
         try:
-            rate = SR_RATE if lang == "sr" else "+0%"
-            spoken = to_cyr(text) if lang == "sr" else clean_ru(text)
+            rate = SR_RATE if lang.startswith("sr") else "+0%"
+            spoken = to_cyr(text) if lang.startswith("sr") else clean_ru(text)
             await edge_tts.Communicate(spoken, VOICE[lang], rate=rate).save(str(p))
             if p.stat().st_size > 1200:
                 return p
@@ -104,23 +104,35 @@ async def main():
         async with sem:
             return await synth(lang, text)
 
-    # 1. every Serbian and Russian text used by the course
+    dpath = ROOT / "data" / "dialogs.json"
+    dialogs = json.loads(dpath.read_text(encoding="utf-8"))["dialogs"] if dpath.exists() else []
+
+    # 1. every Serbian and Russian text used by the course and the dialogs
     wanted = set()
     for L in course["lessons"]:
         wanted.add(("ru", f"Урок {L['n']}. {L['title']}."))
         for sr, ru in L["w"] + L["d"]:
             wanted.add(("sr", sr))
             wanted.add(("ru", ru))
-    await asyncio.gather(*[limited(l, t) for l, t in wanted])
+    for D in dialogs:
+        wanted.add(("ru", f"Диалог. {D['title']}."))
+        for who, sr, ru in D["lines"]:
+            wanted.add(("sr" if who == "A" else "sr2", sr))
+            wanted.add(("ru", ru))
+    await asyncio.gather(*[limited(l, t) for l, t in sorted(wanted)])
 
     manifest = {"clips": {}, "car": {}}
-    for lang, text in wanted:
-        if lang == "sr":
-            manifest["clips"][text] = "clips/" + clip_path(lang, text).name
+    for want in ("sr", "sr2"):
+        for lang, text in wanted:
+            if lang == want:
+                manifest["clips"].setdefault(text, "clips/" + clip_path(lang, text).name)
 
-    # 2. car tracks: RU prompt -> pause -> SR -> pause to repeat -> SR
+    # 2. car tracks: RU prompt -> pause -> SR -> pause to repeat aloud
+    def voice_of(D, sr):
+        return "sr" if next(w for w, s_, _ in D["lines"] if s_ == sr) == "A" else "sr2"
+
     with tempfile.TemporaryDirectory() as tmp:
-        for L in course["lessons"]:
+        def build(tid, intro, title, blocks, dialog=None):
             parts, cues, t = [], [], 0.0
 
             def add(path, cue=None):
@@ -135,24 +147,38 @@ async def main():
                 parts.append(silence(sec, tmp))
                 t += sec
 
-            add(clip_path("ru", f"Урок {L['n']}. {L['title']}."), ["", L["title"], "intro"])
+            add(clip_path("ru", intro), ["", title, "intro"])
             gap(1.2)
-            for kind, items in (("word", L["w"]), ("line", L["d"])):
+            for kind, items in blocks:
+                if kind == "play":  # dialog played through once without pauses
+                    for sr, ru in items:
+                        add(clip_path(voice_of(dialog, sr), sr), [sr, ru, "line"])
+                        gap(0.7)
+                    gap(1.5)
+                    continue
                 for sr, ru in items:
+                    lang = voice_of(dialog, sr) if dialog else "sr"
                     add(clip_path("ru", ru), [sr, ru, kind])
                     gap(1.2)
-                    d = duration(clip_path("sr", sr))
-                    add(clip_path("sr", sr))
+                    d = duration(clip_path(lang, sr))
+                    add(clip_path(lang, sr))
                     gap(d + 1.5)  # time to repeat aloud
-                    add(clip_path("sr", sr))
-                    gap(1.4)
-            lst = Path(tmp) / f"{L['id']}.txt"
+                    if not dialog:
+                        add(clip_path(lang, sr))
+                        gap(1.4)
+            lst = Path(tmp) / f"{tid}.txt"
             lst.write_text("".join(f"file '{p}'\n" for p in parts), encoding="utf-8")
-            out = CAR / f"{L['id']}.mp3"
+            out = CAR / f"{tid}.mp3"
             run("ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(lst),
                 "-ar", "24000", "-ac", "1", "-b:a", "48k", str(out))
-            manifest["car"][L["id"]] = {"file": f"car/{L['id']}.mp3", "dur": round(t, 1), "cues": cues}
-            print(L["id"], f"{t/60:.1f} min")
+            manifest["car"][tid] = {"file": f"car/{tid}.mp3", "dur": round(t, 1), "cues": cues}
+            print(tid, f"{t/60:.1f} min")
+
+        for L in course["lessons"]:
+            build(L["id"], f"Урок {L['n']}. {L['title']}.", L["title"], [("word", L["w"]), ("line", L["d"])])
+        for D in dialogs:
+            pairs = [(sr, ru) for _, sr, ru in D["lines"]]
+            build(D["id"], f"Диалог. {D['title']}.", D["title"], [("play", pairs), ("line", pairs)], dialog=D)
 
     (OUT / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False), encoding="utf-8")
 

@@ -1,6 +1,7 @@
 /* ---------- car mode: long audio lessons with pauses for repeating aloud ---------- */
 let carWake=null,carSaveAt=0;
-const carIds=()=>COURSE.lessons.filter(l=>AUDIO.car&&AUDIO.car[l.id]).map(l=>l.id);
+const carIds=()=>COURSE.lessons.map(l=>l.id).concat(DIALOGS.map(d=>d.id)).filter(id=>AUDIO.car&&AUDIO.car[id]);
+function track(id){const L=lesson(id);if(L)return {label:L.lvl+' · '+L.n+'. '+L.title,sub:L.lvl+' · урок '+L.n,title:L.title};const D=dialog(id);return D?{label:'Диалог · '+D.title,sub:'Диалог · '+D.lvl,title:D.title}:null}
 function carAudio(){return $('#car')}
 function carLoad(id,t,play){
   const a=carAudio(),info=AUDIO.car&&AUDIO.car[id];if(!a||!info)return;
@@ -15,8 +16,8 @@ function carLoad(id,t,play){
 }
 function setMedia(id){
   try{
-    const L=lesson(id);if(!L||!navigator.mediaSession)return;
-    navigator.mediaSession.metadata=new MediaMetadata({title:L.lvl+' · '+L.n+'. '+L.title,artist:'Srpski trener',album:'Курс сербского'});
+    const T=track(id);if(!T||!navigator.mediaSession)return;
+    navigator.mediaSession.metadata=new MediaMetadata({title:T.label,artist:'Srpski trener',album:'Курс сербского'});
     const a=carAudio();
     navigator.mediaSession.setActionHandler('play',()=>a.play());
     navigator.mediaSession.setActionHandler('pause',()=>a.pause());
@@ -57,10 +58,10 @@ function carPlayState(){
 function vCar(){
   const ids=carIds();
   if(!AUDIO_OK||!ids.length)return '<h2>В машине</h2><div class="card"><p>Аудиоуроки появятся после сборки сайта на GitHub: озвучка генерируется автоматически при публикации. Откройте вкладку Actions в репозитории и дождитесь зелёной отметки.</p></div>';
-  const id=S.car.id&&ids.includes(S.car.id)?S.car.id:ids[0],L=lesson(id),info=AUDIO.car[id];
-  const list=ids.map(i=>{const l=lesson(i);return '<button class="btn" data-a="cload" data-id="'+i+'"'+(i===id?' style="border-color:var(--plava)"':'')+'><b>'+l.lvl+' · '+l.n+'. '+esc(l.title)+'</b> <span class="muted small">'+fmt(AUDIO.car[i].dur)+'</span></button>'}).join('');
+  const id=S.car.id&&ids.includes(S.car.id)?S.car.id:ids[0],T=track(id),info=AUDIO.car[id];
+  const list=ids.map(i=>{const t=track(i);return '<button class="btn" data-a="cload" data-id="'+i+'"'+(i===id?' style="border-color:var(--plava)"':'')+'><b>'+esc(t.label)+'</b> <span class="muted small">'+fmt(AUDIO.car[i].dur)+'</span></button>'}).join('');
   return '<h2>В машине</h2><p class="muted small">Режим без экрана: русская фраза, пауза, сербская фраза, пауза, чтобы повторить вслух, и сербская фраза ещё раз. Уроки идут подряд, место запоминается.</p>'+
-  '<div class="card"><span class="label">'+L.lvl+' · урок '+L.n+'</span><h3>'+esc(L.title)+'</h3><div class="cue" id="ccue"><span class="muted">Нажмите «Играть»</span></div>'+
+  '<div class="card"><span class="label">'+esc(T.sub)+'</span><h3>'+esc(T.title)+'</h3><div class="cue" id="ccue"><span class="muted">Нажмите «Играть»</span></div>'+
   '<input type="range" id="cseek" min="0" max="'+Math.floor(info.dur)+'" value="0" aria-label="Положение">'+
   '<div class="row spread"><span class="mono small muted" id="ctime">0:00 / '+fmt(info.dur)+'</span></div>'+
   '<div class="car-big"><button class="btn" data-a="cseek" data-d="-15">−15 с</button><button class="btn primary" id="cplay" data-a="ctoggle">▶ Играть</button><button class="btn" data-a="cseek" data-d="15">+15 с</button></div>'+

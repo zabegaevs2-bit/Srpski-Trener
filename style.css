@@ -58,7 +58,7 @@ th,td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;white
 th{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:500}
 td b{color:var(--crvena)}
 .tabs{position:fixed;left:0;right:0;bottom:0;z-index:5;background:var(--surface);border-top:1px solid var(--line);
-  display:grid;grid-template-columns:repeat(4,1fr);
+  display:grid;grid-template-columns:repeat(5,1fr);
   padding:6px max(8px,env(safe-area-inset-right,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(8px,env(safe-area-inset-left,0px))}
 .tab{background:none;border:0;padding:8px 2px;border-radius:10px;font-size:12px;color:var(--muted);display:flex;flex-direction:column;align-items:center;gap:2px;min-height:48px}
 .tab b{font-family:var(--f-display);font-size:18px;font-weight:700}
@@ -142,3 +142,19 @@ th{font-size:12px}
 html,body{height:auto;min-height:100%}
 #app{padding-bottom:calc(110px + env(safe-area-inset-bottom,0px))}
 body{padding-block:18px 0}
+
+/* v4: trainer + dialogs */
+.tabs{grid-template-columns:repeat(5,1fr)}
+.tab{font-size:14px;padding:6px 0}
+.who{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;color:var(--muted);text-transform:uppercase}
+.dline{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--line)}
+.dline:last-child{border-bottom:0}
+.dline.b .wt{padding-left:0}
+.dline.b{flex-direction:row-reverse}
+.dline.b .wt{text-align:right}
+.acc{height:8px;border-radius:99px;background:var(--line);overflow:hidden;min-width:70px;flex:1}
+.acc>i{display:block;height:100%;background:var(--ok)}
+.acc.weak>i{background:var(--crvena)}
+.arow{display:flex;gap:12px;align-items:center;padding:6px 0}
+.arow .nm{flex:1.4;min-width:0;font-size:15px}
+.arow .pc{font-family:var(--f-mono);font-size:13px;color:var(--muted);width:3.2em;text-align:right}

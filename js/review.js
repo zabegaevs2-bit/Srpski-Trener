@@ -4,7 +4,7 @@ function item(key){
   const [t,id,i]=key.split(':');const L=lesson(id);if(!L)return null;
   if(t==='w'&&L.w[i])return {t,L,i:+i,sr:L.w[i][0],ru:L.w[i][1]};
   if(t==='l'&&L.d[i])return {t,L,i:+i,sr:L.d[i][0],ru:L.d[i][1]};
-  if(t==='x'&&L.x&&L.x[i])return {t,L,i:+i,x:L.x[i]};
+  if(t==='x'&&L.x&&L.x[i])return {t,L,i:+i,x:xShuf(L,+i)};
   return null;
 }
 function dueKeys(){const d=today();return Object.keys(S.srs).filter(k=>S.srs[k].due<=d&&item(k)).sort((a,b)=>S.srs[a].due<S.srs[b].due?-1:1)}
