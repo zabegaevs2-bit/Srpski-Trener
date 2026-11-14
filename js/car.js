@@ -1,7 +1,8 @@
 /* ---------- car mode: long audio lessons with pauses for repeating aloud ---------- */
 let carWake=null,carSaveAt=0;
-const carIds=()=>COURSE.lessons.map(l=>l.id).concat(DIALOGS.map(d=>d.id)).filter(id=>AUDIO.car&&AUDIO.car[id]);
-function track(id){const L=lesson(id);if(L)return {label:L.lvl+' · '+L.n+'. '+L.title,sub:L.lvl+' · урок '+L.n,title:L.title};const D=dialog(id);return D?{label:'Диалог · '+D.title,sub:'Диалог · '+D.lvl,title:D.title}:null}
+const carIds=()=>{const car=AUDIO.car||{};const pl=Object.keys(car).filter(k=>k.startsWith('p-')).sort((a,b)=>(a==='p-dlg')-(b==='p-dlg')||(a<b?-1:1));return pl.concat(COURSE.lessons.map(l=>l.id),DIALOGS.map(d=>d.id)).filter(id=>car[id])};
+const isPl=id=>String(id).startsWith('p-');
+function track(id){if(isPl(id)){const i=AUDIO.car&&AUDIO.car[id];return i?{label:i.title,sub:'Без остановок',title:i.title}:null}const L=lesson(id);if(L)return {label:L.lvl+' · '+L.n+'. '+L.title,sub:L.lvl+' · урок '+L.n,title:L.title};const D=dialog(id);return D?{label:'Диалог · '+D.title,sub:'Диалог · '+D.lvl,title:D.title}:null}
 function carAudio(){return $('#car')}
 function carLoad(id,t,play){
   const a=carAudio(),info=AUDIO.car&&AUDIO.car[id];if(!a||!info)return;
@@ -28,7 +29,7 @@ function setMedia(id){
   }catch(e){}
 }
 function carStep(d){
-  const ids=carIds(),i=ids.indexOf(S.car.id),j=i+d;
+  const ids=carIds().filter(x=>isPl(x)===isPl(S.car.id)),i=ids.indexOf(S.car.id),j=i+d;
   if(ids[j])carLoad(ids[j],0,true);
 }
 function carToggle(){
@@ -59,20 +60,21 @@ function vCar(){
   const ids=carIds();
   if(!AUDIO_OK||!ids.length)return '<h2>В машине</h2><div class="card"><p>Аудиоуроки появятся после сборки сайта на GitHub: озвучка генерируется автоматически при публикации. Откройте вкладку Actions в репозитории и дождитесь зелёной отметки.</p></div>';
   const id=S.car.id&&ids.includes(S.car.id)?S.car.id:ids[0],T=track(id),info=AUDIO.car[id];
-  const list=ids.map(i=>{const t=track(i);return '<button class="btn" data-a="cload" data-id="'+i+'"'+(i===id?' style="border-color:var(--plava)"':'')+'><b>'+esc(t.label)+'</b> <span class="muted small">'+fmt(AUDIO.car[i].dur)+'</span></button>'}).join('');
-  return '<h2>В машине</h2><p class="muted small">Режим без экрана: русская фраза, пауза, сербская фраза, пауза, чтобы повторить вслух, и сербская фраза ещё раз. Уроки идут подряд, место запоминается.</p>'+
+  const row=i=>{const t=track(i);return '<button class="btn" data-a="cload" data-id="'+i+'"'+(i===id?' style="border-color:var(--plava)"':'')+'><b>'+esc(t.label)+'</b> <span class="muted small">'+fmt(AUDIO.car[i].dur)+'</span></button>'};
+  const plist=ids.filter(isPl).map(row).join(''),list=ids.filter(x=>!isPl(x)).map(row).join('');
+  return '<h2>В машине</h2><p class="muted small">Режим без экрана: русская фраза, пауза, сербская фраза, пауза, чтобы повторить вслух, и сербская фраза ещё раз. Для дороги выберите «Весь уровень подряд»: он играет без остановок. Место запоминается.</p>'+
   '<div class="card"><span class="label">'+esc(T.sub)+'</span><h3>'+esc(T.title)+'</h3><div class="cue" id="ccue"><span class="muted">Нажмите «Играть»</span></div>'+
   '<input type="range" id="cseek" min="0" max="'+Math.floor(info.dur)+'" value="0" aria-label="Положение">'+
   '<div class="row spread"><span class="mono small muted" id="ctime">0:00 / '+fmt(info.dur)+'</span></div>'+
   '<div class="car-big"><button class="btn" data-a="cseek" data-d="-15">−15 с</button><button class="btn primary" id="cplay" data-a="ctoggle">▶ Играть</button><button class="btn" data-a="cseek" data-d="15">+15 с</button></div>'+
   '<div class="car-big"><button class="btn" data-a="cstep" data-d="-1">← Урок</button><button class="btn" data-a="cstep" data-d="1">Урок →</button></div></div>'+
-  '<div class="card"><span class="label">Все аудиоуроки</span><div class="opts">'+list+'</div></div>';
+  (plist?'<div class="card"><span class="label">Для дороги: подряд без остановок</span><p class="small muted">Один длинный файл на весь уровень. Звук не прерывается, и ничего не нужно переключать при заблокированном экране.</p><div class="opts">'+plist+'</div></div>':'')+'<div class="card"><span class="label">Отдельные уроки и диалоги</span><div class="opts">'+list+'</div></div>';
 }
 function carInit(){
   const a=carAudio();if(!a)return;
   a.addEventListener('timeupdate',carTick);
   a.addEventListener('play',async()=>{carPlayState();try{if(navigator.wakeLock)carWake=await navigator.wakeLock.request('screen')}catch(e){}});
   a.addEventListener('pause',()=>{carPlayState();S.car.t=a.currentTime;save();try{carWake&&carWake.release();carWake=null}catch(e){}});
-  a.addEventListener('ended',()=>{const ids=carIds(),i=ids.indexOf(S.car.id);if(ids[i+1])carLoad(ids[i+1],0,true)});
+  a.addEventListener('ended',()=>{const ids=carIds().filter(x=>isPl(x)===isPl(S.car.id)),i=ids.indexOf(S.car.id);if(ids[i+1])carLoad(ids[i+1],0,true)});
   document.addEventListener('input',e=>{if(e.target&&e.target.id==='cseek'){const a=carAudio();if(a.src)a.currentTime=+e.target.value}});
 }

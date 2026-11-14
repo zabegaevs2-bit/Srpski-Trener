@@ -131,6 +131,7 @@ async def main():
     def voice_of(D, sr):
         return "sr" if next(w for w, s_, _ in D["lines"] if s_ == sr) == "A" else "sr2"
 
+    built = {}
     with tempfile.TemporaryDirectory() as tmp:
         def build(tid, intro, title, blocks, dialog=None):
             parts, cues, t = [], [], 0.0
@@ -166,19 +167,45 @@ async def main():
                     if not dialog:
                         add(clip_path(lang, sr))
                         gap(1.4)
+            built[tid] = (parts, cues, t)
+            write_track(tid, parts, cues, t)
+
+        def write_track(tid, parts, cues, t, title=None):
             lst = Path(tmp) / f"{tid}.txt"
             lst.write_text("".join(f"file '{p}'\n" for p in parts), encoding="utf-8")
             out = CAR / f"{tid}.mp3"
             run("ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(lst),
                 "-ar", "24000", "-ac", "1", "-b:a", "48k", str(out))
             manifest["car"][tid] = {"file": f"car/{tid}.mp3", "dur": round(t, 1), "cues": cues}
+            if title:
+                manifest["car"][tid]["title"] = title
             print(tid, f"{t/60:.1f} min")
+
+        def playlist(tid, title, ids):
+            """One long file: iOS keeps playing it with the screen locked, no track switching needed."""
+            parts, cues, off = [], [], 0.0
+            for i in ids:
+                p_, c_, t_ = built[i]
+                cues += [[round(x[0] + off, 2)] + x[1:] for x in c_]
+                parts += p_ + [silence(2.0, tmp)]
+                off += t_ + 2.0
+            write_track(tid, parts, cues, off, title)
 
         for L in course["lessons"]:
             build(L["id"], f"Урок {L['n']}. {L['title']}.", L["title"], [("word", L["w"]), ("line", L["d"])])
         for D in dialogs:
             pairs = [(sr, ru) for _, sr, ru in D["lines"]]
             build(D["id"], f"Диалог. {D['title']}.", D["title"], [("play", pairs), ("line", pairs)], dialog=D)
+
+        # 3. playlists for hands-free driving: a whole level, or all dialogs, as one file
+        for lvl in ("A1", "A2", "B1", "B2", "C1"):
+            ids = [L["id"] for L in sorted(course["lessons"], key=lambda x: x["n"]) if L["lvl"] == lvl]
+            if ids:
+                playlist(f"p-{lvl.lower()}", f"Весь уровень {lvl} подряд", ids)
+        order = {"A1": 0, "A2": 1, "B1": 2, "B2": 3, "C1": 4}
+        dl = [D["id"] for D in sorted(dialogs, key=lambda x: (order.get(x["lvl"], 9), x["id"]))]
+        if dl:
+            playlist("p-dlg", "Все диалоги подряд", dl)
 
     (OUT / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False), encoding="utf-8")
 

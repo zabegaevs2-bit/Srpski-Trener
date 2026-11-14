@@ -341,7 +341,7 @@
 },
 {
 "h": "Рода, которые отличаются от русского",
-"t": "<b>kafa</b> (кофе) — женский, а в русском мужской. <b>auto</b> (машина) — средний. <b>mleko</b> (молоко) — средний. Слово <b>noć</b> (ночь) женское, хотя оканчивается на согласную. Род учите вместе со словом."
+"t": "<b>kafa</b> (кофе) — женский, а в русском мужской. <b>auto</b> (машина) — мужской, хотя оканчивается на -o: <b>moj auto, novi auto</b>. <b>mleko</b> (молоко) — средний. Слово <b>noć</b> (ночь) женское, хотя оканчивается на согласную. Род учите вместе со словом."
 },
 {
 "h": "Ovo je… и ovaj / ova / ovo",
@@ -349,7 +349,7 @@
 },
 {
 "h": "Мой / моя / моё",
-"t": "<b>moj brat</b>, <b>moja kuća</b>, <b>moje auto</b>. Подробнее в уроке 8."
+"t": "<b>moj brat</b>, <b>moja kuća</b>, <b>moj auto</b>. Подробнее в уроке 8."
 }
 ],
 "w": [
@@ -424,7 +424,7 @@
 "Это вода, а это молоко."
 ],
 [
-"Ono je moje auto.",
+"Ono je moj auto.",
 "То моя машина."
 ]
 ],
@@ -1221,15 +1221,15 @@
 "g": [
 {
 "h": "Согласование",
-"t": "Прилагательное совпадает с существительным по роду, числу и падежу. В именительном: <b>nov grad</b>, <b>nova kuća</b>, <b>novo auto</b>. Окончания: м.р. <b>–</b>, ж.р. <b>-a</b>, ср.р. <b>-o</b>."
+"t": "Прилагательное совпадает с существительным по роду, числу и падежу. В именительном: <b>nov grad</b>, <b>nova kuća</b>, <b>novo selo</b>. Окончания: м.р. <b>–</b>, ж.р. <b>-a</b>, ср.р. <b>-o</b>."
 },
 {
 "h": "Мой, твой, наш, ваш",
-"t": "<b>moj / moja / moje</b>, <b>tvoj / tvoja / tvoje</b>, <b>naš / naša / naše</b>, <b>vaš / vaša / vaše</b>. Они тоже согласуются: <b>moj brat, moja sestra, moje auto</b>."
+"t": "<b>moj / moja / moje</b>, <b>tvoj / tvoja / tvoje</b>, <b>naš / naša / naše</b>, <b>vaš / vaša / vaše</b>. Они тоже согласуются: <b>moj brat, moja sestra, moje selo</b>."
 },
 {
 "h": "Сказуемое",
-"t": "<b>Kuća je velika.</b> <b>Grad je lep.</b> <b>Auto je staro.</b> Глагол je обязателен."
+"t": "<b>Kuća je velika.</b> <b>Grad je lep.</b> <b>Auto je star.</b> Глагол je обязателен."
 }
 ],
 "w": [
@@ -1296,11 +1296,11 @@
 "Наша квартира маленькая, но новая."
 ],
 [
-"Je li tvoje auto novo?",
+"Je li tvoj auto nov?",
 "Твоя машина новая?"
 ],
 [
-"Ne, moje auto je staro, ali dobro.",
+"Ne, moj auto je star, ali dobar.",
 "Нет, моя машина старая, но хорошая."
 ],
 [
@@ -1321,15 +1321,15 @@
 "Kuća — ж.р.: moja."
 ],
 [
-"___ auto je novo.",
+"___ auto je nov.",
 [
 "Moj",
 "Moja",
 "Moje",
 "Moji"
 ],
-2,
-"Auto — ср.р.: moje."
+0,
+"Auto — мужской род: moj auto."
 ],
 [
 "Ovaj grad je ___.",
@@ -1575,7 +1575,7 @@
 "g": [
 {
 "h": "Кому? Чему?",
-"t": "Дательный (<b>dativ</b>): <b>kome? čemu?</b> Адресат действия: <b>dajem poklon bratu</b>, <b>pomažem sestri</b>, <b>pišem majci</b>. Окончания: мужской и средний <b>-u</b>, женский <b>-i</b>."
+"t": "Дательный (<b>dativ</b>): <b>kome? čemu?</b> Адресат действия: <b>poklanjam knjigu bratu</b>, <b>pomažem sestri</b>, <b>pišem majci</b>. Окончания: мужской и средний <b>-u</b>, женский <b>-i</b>."
 },
 {
 "h": "Женский род: k → c, g → z",
@@ -1616,8 +1616,8 @@
 "вопрос"
 ],
 [
-"odgovor",
-"ответ"
+"poklanjam",
+"дарю"
 ],
 [
 "treba mi",
@@ -1646,8 +1646,8 @@
 "Мне нужна книга."
 ],
 [
-"Dajem poklon bratu.",
-"Дарю подарок брату."
+"Poklanjam knjigu bratu.",
+"Дарю книгу брату."
 ],
 [
 "Pomažem sestri i majci.",
@@ -1730,7 +1730,7 @@
 "hvala + дательный: hvala vama."
 ],
 [
-"Dajem poklon ___. (prijatelj)",
+"Poklanjam knjigu ___. (prijatelj)",
 [
 "prijatelj",
 "prijatelja",
@@ -1933,7 +1933,7 @@
 },
 {
 "h": "Короткие формы (клитики)",
-"t": "Винительный: <b>me, te, ga, je, nas, vas, ih</b>. Дательный: <b>mi, ti, mu, joj, nam, vam, im</b>. Стоят на втором месте: <b>Vidim te.</b> <b>Dajem ti poklon.</b> После предлога нужна полная форма: <b>za mene, sa mnom, kod njega, o tebi</b>."
+"t": "Винительный: <b>me, te, ga, je, nas, vas, ih</b>. Дательный: <b>mi, ti, mu, joj, nam, vam, im</b>. Стоят на втором месте: <b>Vidim te.</b> <b>Poklanjam ti knjigu.</b> После предлога нужна полная форма: <b>za mene, sa mnom, kod njega, o tebi</b>."
 }
 ],
 "w": [
@@ -1996,8 +1996,8 @@
 "Ана, я тебя вижу!"
 ],
 [
-"Dajem ti poklon.",
-"Дарю тебе подарок."
+"Poklanjam ti knjigu.",
+"Дарю тебе книгу."
 ],
 [
 "Razgovaram o tebi i o njemu.",
@@ -4609,7 +4609,7 @@
 "Nema + родительный множественного: studenata."
 ],
 [
-"Dajem poklon ___. (deca)",
+"Poklanjam knjigu ___. (deca)",
 [
 "deci",
 "decu",
